@@ -37,9 +37,9 @@
       <!-- arrival section -->
       @include('home.arrive')
       <!-- end arrival section -->
-      @include('home.subscribe')
+      @include('home.product')
       <!-- product section -->
-      
+      @include('home.subscribe')
       <!-- end client section -->
       @include('home.clientsection')
       <!-- footer start -->
