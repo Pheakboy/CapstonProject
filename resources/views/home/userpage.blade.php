@@ -33,7 +33,7 @@
       <!-- why section -->
       @include('home.why')
       <!-- end why section -->
-      
+      @include('home.product')
       <!-- arrival section -->
       @include('home.arrive')
       <!-- end arrival section -->

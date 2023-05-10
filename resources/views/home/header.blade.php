@@ -11,18 +11,19 @@
                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                <li class="nav-item dropdown">
-                   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Categories <span class="caret"></span></a>
+                   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Sport<span class="caret"></span></a>
                    <ul class="dropdown-menu">
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="testimonial.html">Testimonial</a></li>
+                      <li><a href="about.html">Football</a></li>
+                      <li><a href="testimonial.html">Volleyball</a></li>
+                      <li><a href="about.html">Tennis</a></li>
+                      <li><a href="about.html">Basketball</a></li>
+                      <li><a href="about.html">Cycling</a></li>
                    </ul>
                 </li>
                 <li class="nav-item">
                    <a class="nav-link" href="product.html">Products</a>
                 </li>
-                <li class="nav-item">
-                   <a class="nav-link" href="blog_list.html">Blog</a>
-                </li>
+                
                 <li class="nav-item">
                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
