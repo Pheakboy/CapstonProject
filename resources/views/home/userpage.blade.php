@@ -41,9 +41,9 @@
       <!-- product section -->
       @include ('home.product')
       <!-- end product section -->
-
+      @include ('home.subscribe')
       <!-- subscribe section -->
-      
+      @include ('home.clientsection')
       <!-- footer end -->
       <div class="cpy_">
          <p class="mx-auto">© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a><br>
