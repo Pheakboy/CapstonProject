@@ -37,17 +37,10 @@
       <!-- arrival section -->
       @include('home.arrive')
       <!-- end arrival section -->
-<<<<<<< HEAD
       @include('home.subscribe')
       <!-- product section -->
       @include('home.clientsection')
-=======
-      @include('home.product')
-      <!-- product section -->
-      @include('home.subscribe')
->>>>>>> eb61712d897f1ff3e57a4601dd8d375aabf2103e
       <!-- end client section -->
-      @include('home.clientsection')
       <!-- footer start -->
       @include('home.footer')
       <!-- footer end -->
