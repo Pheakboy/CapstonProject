@@ -37,7 +37,7 @@
       <!-- arrival section -->
       @include('home.arrive')
       <!-- end arrival section -->
-      @inlcude('home.subscribe')
+      @include('home.subscribe')
       <!-- product section -->
       @include('home.clientsection')
       <!-- end client section -->
