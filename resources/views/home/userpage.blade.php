@@ -39,11 +39,10 @@
       <!-- end arrival section -->
       
       <!-- product section -->
-      @include ('home.product')
-      <!-- end product section -->
-      @include ('home.subscribe')
-      <!-- subscribe section -->
-      @include ('home.clientsection')
+      
+      <!-- end client section -->
+      <!-- footer start -->
+      @include('home.footer')
       <!-- footer end -->
       <div class="cpy_">
          <p class="mx-auto">© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a><br>
