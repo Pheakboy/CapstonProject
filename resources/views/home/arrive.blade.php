@@ -2,7 +2,7 @@
     <div class="container">
        <div class="box">
           <div class="arrival_bg_box">
-             <img src="images/arrival_1.png" alt="">
+             <img src="images/arrival.png" alt="">
           </div>
           <div class="row">
              <div class="col-md-6 ml-auto">
