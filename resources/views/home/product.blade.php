@@ -461,7 +461,7 @@
                    </div>
                 </div>
                 <div class="img-box">
-                   <img src="images/shin_guard2.jpg" alt="">
+                   <img src="images/shin_guard3.jpg" alt="">
                 </div>
                 <div class="detail-box">
                    <h5>
