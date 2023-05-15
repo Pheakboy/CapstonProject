@@ -28,11 +28,11 @@
                    <a class="nav-link" href="contact">Contact</a>
                 </li>
 
-                <form class="form-inline">
+                <!-- <form class="form-inline">
                   <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
                   </button>
-               </form>
+               </form> -->
                
                @if (Route::has('login'))
 
@@ -56,7 +56,15 @@
 
                @endauth
                 @endif
-
+                <form class="form-inline">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="submit">Search</button>
+    </div>
+  </div>
+</form>
+         
              </ul>
           </div>
        </nav>

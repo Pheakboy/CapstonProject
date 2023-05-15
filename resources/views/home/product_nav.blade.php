@@ -100,11 +100,11 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/p1.png" alt="">
+                        <img src="images/ball3.jpg" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Men's Shirt
+                          ball
                         </h5>
                         <h6>
                            $75
@@ -125,11 +125,11 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/p2.png" alt="">
+                        <img src="images/ball4.jpg" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Men's Shirt
+                           ball
                         </h5>
                         <h6>
                            $80
@@ -150,11 +150,11 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/p3.png" alt="">
+                        <img src="images/ball5.jpg" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Women's Dress
+                        ball
                         </h5>
                         <h6>
                            $68
@@ -175,11 +175,11 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/p4.png" alt="">
+                        <img src="images/ball6.jpg" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Women's Dress
+                        ball
                         </h5>
                         <h6>
                            $70
@@ -200,11 +200,11 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/p5.png" alt="">
+                        <img src="images/a1 (8).jpg" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Women's Dress
+                        Clothes
                         </h5>
                         <h6>
                            $75
@@ -225,11 +225,11 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/p6.png" alt="">
+                        <img src="images/a1 (2).jpg" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Women's Dress
+                           Clothes
                         </h5>
                         <h6>
                            $58
@@ -250,11 +250,11 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/p7.png" alt="">
+                        <img src="images/a1 (3).jpg" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Women's Dress
+                           Clothes
                         </h5>
                         <h6>
                            $80
@@ -275,11 +275,11 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/p8.png" alt="">
+                        <img src="images/a1 (3).jpg" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Men's Shirt
+                           Clothes
                         </h5>
                         <h6>
                            $65
@@ -300,11 +300,11 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/p9.png" alt="">
+                        <img src="images/Shoes6.jpg" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Men's Shirt
+                           Shoes
                         </h5>
                         <h6>
                            $65
@@ -325,11 +325,11 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/p10.png" alt="">
+                        <img src="images/Shoes7.jpg" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Men's Shirt
+                        Shoes
                         </h5>
                         <h6>
                            $65
@@ -350,11 +350,11 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/p11.png" alt="">
+                        <img src="images/Shoes8.jpg" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Men's Shirt
+                           Shoes
                         </h5>
                         <h6>
                            $65
@@ -375,11 +375,11 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/p12.png" alt="">
+                        <img src="images/Shoes9.jpg" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Women's Dress
+                           Shoes
                         </h5>
                         <h6>
                            $65
@@ -397,7 +397,7 @@
       </section>
       <!-- end product section -->
       <!-- footer section -->
-      <footer class="footer_section">
+      <!-- <footer class="footer_section">
          <div class="container">
             <div class="row">
                <div class="col-md-4 footer-col">
@@ -470,6 +470,73 @@
          
                      Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
                   </p>
+               </div>
+            </div>
+         </div>
+      </footer> -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                   <div class="full">
+                      <div class="logo_footer">
+                        <a href="#"><img width="210" src="images/GSport.png" alt="#" /></a>
+                      </div>
+                      <div class="information_f">
+                        <p><strong>ADDRESS:</strong>CADT , Cambodia Academy Degital of Technology</p>
+                        <p><strong>TELEPHONE:</strong> +885 969629934</p>
+                        <p><strong>EMAIL:</strong> pheakboy@gmail.com</p>
+                      </div>
+                   </div>
+               </div>
+               <div class="col-md-8">
+                  <div class="row">
+                  <div class="col-md-7">
+                     <div class="row">
+                        <div class="col-md-6">
+                     <div class="widget_menu">
+                        <h3>Menu</h3>
+                        <ul>
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">About</a></li>
+                           <li><a href="#">Services</a></li>
+                           <li><a href="#">Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="widget_menu">
+                        <h3>Account</h3>
+                        <ul>
+                           <li><a href="#">Account</a></li>
+                           <li><a href="#">Checkout</a></li>
+                           <li><a href="#">Login</a></li>
+                           <li><a href="#">Register</a></li>
+                           <li><a href="#">Shopping</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                     </div>
+                  </div>     
+                  <div class="col-md-5">
+                     <div class="widget_menu">
+                        <h3>Newsletter</h3>
+                        <div class="information_f">
+                          <p>Subscribe by our newsletter and get update protidin.</p>
+                        </div>
+                        <div class="form_sub">
+                           <form>
+                              <fieldset>
+                                 <div class="field">
+                                    <input type="email" placeholder="Enter Your Mail" name="email" />
+                                    <input type="submit" value="Subscribe" />
+                                 </div>
+                              </fieldset>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  </div>
                </div>
             </div>
          </div>
