@@ -50,7 +50,7 @@
                             <a class="nav-link" href="product_nav">Products</a>
                         </li>
 
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="contact">Contact</a>
                         </li>
 
