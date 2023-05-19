@@ -24,6 +24,6 @@ class FooterController extends Controller
     }
     public function aboutus()
     {
-        return view('home.contact');
+        return view('home.aboutus');
     }
 }
