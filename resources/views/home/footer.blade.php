@@ -21,10 +21,10 @@
                      <div class="widget_menu">
                         <h3>Menu</h3>
                         <ul>
-                           <li><a href="#">Home</a></li>
-                           <li><a href="#">About</a></li>
-                           <li><a href="#">Services</a></li>
-                           <li><a href="#">Contact</a></li>
+                           <li><a href="userpage">Home</a></li>
+                           <li><a href="product_nav">Product</a></li>
+                           <li><a href="contact">Contact</a></li>
+                           <li><a href="aboutus">About</a></li>
                         </ul>
                      </div>
                   </div>
@@ -41,7 +41,7 @@
                      </div>
                   </div>
                      </div>
-                  </div>     
+                  </div>
                   <div class="col-md-5">
                      <div class="widget_menu">
                         <h3>Newsletter</h3>

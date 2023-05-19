@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FooterController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
@@ -34,15 +35,14 @@ Route::get('/product_nav', function () {
 Route::get('/userpage', function () {
     return view('/home.userpage');
 });
+
 route::get('/redirect',[HomeController::class,'redirect']);
 
 route::get('view_category',[AdminController::class,'view_category']);
-
 route::post('add_category',[AdminController::class,'add_category']);
 
-route::get('delete_category/{id}',[AdminController::class,'delete_category']);
-
-route::get('view_product',[AdminController::class,'view_product']);
-
-route::post('add_product',[AdminController::class,'add_product']);
-
+//footer
+route::get('/home',[FooterController::class,'home']);
+route::get('/product_nav',[FooterController::class,'product_nav']);
+route::get('/contact',[FooterController::class,'contact']);
+route::get('/aboutus',[FooterController::class,'aboutus']);
