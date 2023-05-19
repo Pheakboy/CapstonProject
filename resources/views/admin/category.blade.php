@@ -16,6 +16,13 @@
     .input_color{
       color: black;
     }
+    .center{
+      margin: auto;
+      width: 50%;
+      text-align: center;
+      margin-top: 30px;
+      border: 3px solid white;
+    }
     </style>
 
   </head>
@@ -49,6 +56,25 @@
                       <input type="submit" class="btn btn-primary"  name="submit" value="Add Category">
                     </form>
                 </div>
+
+                <table class="center">
+                  <tr>
+                    <td>Category Name</td>
+                    <td>Action</td>
+                  </tr>
+
+                  @foreach ($data as $data)
+                
+
+                  <tr>
+                    <td>{{$data->category_name}}</td>
+                    <td>
+                      <a onclick="return confirm ('Are you sure to delete')" class="btn btn-danger" href="{{url('delete_category', $data->id)}}">Delete</a>
+                    </td>
+                  </tr>
+
+                  @endforeach
+                </table>
 
             </div>
         </div>

@@ -6,11 +6,14 @@ use Illuminate\Http\Request;
 
 use App\Models\Category;
 
+use App\Models\Product;
+
 class AdminController extends Controller
 {
     public function view_category()
     {
-        return view('admin.category');
+        $data=category::all();
+        return view('admin.category', compact('data'));
     }
 
     public function add_category(Request $request)
@@ -22,5 +25,49 @@ class AdminController extends Controller
        $date->save();
 
       return redirect()->back()->with('message', 'Category Added Successfully');
+    }
+
+    public function delete_category($id)
+    {
+        $data=category::find($id);
+
+        $data->delete();
+
+        return redirect()->back()->with('message', 'Category Deleted Success');
+    }
+
+    public function view_product()
+    {
+        $category=category::all();
+        return view('admin.product', compact('category'));
+    }
+
+    public function add_product(request $request)
+    {
+        $product=new product();
+
+        $product->title=$request->title;
+
+        $product->description=$request->description;
+
+        $product->price=$request->price;
+
+        $product->quantity=$request->quantity;
+
+        $product->discount_price=$request->dis_price;
+
+        $product->category=$request->category;
+
+        $image=$request->image;
+
+        $imagename=time().'.'.$image->getClientOriginalExtension();
+
+        $request->image->move('product',$imagename);
+
+        $product->image=$imagename;
+
+        $product->save();
+
+        return redirect()->back()->with('message','Product Added Successully');
     }
 }
