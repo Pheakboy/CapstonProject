@@ -38,8 +38,8 @@ Route::get('/userpage', function () {
 
 route::get('/redirect',[HomeController::class,'redirect']);
 
-route::get('view_category',[AdminController::class,'view_category']);
-route::post('add_category',[AdminController::class,'add_category']);
+route::get('/view_product',[AdminController::class,'view_product']);
+route::post('/add_product',[AdminController::class,'add_product']);
 
 //footer
 route::get('/home',[FooterController::class,'home']);
