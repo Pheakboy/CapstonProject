@@ -4,6 +4,7 @@ use App\Http\Controllers\FooterController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContactUsFormController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,6 +47,11 @@ route::get('/show_product',[AdminController::class,'show_product']);
 route::get('/delete_product/{id}',[AdminController::class,'delete_product']);  
 route::get('/update_product/{id}',[AdminController::class,'update_product']);   
 route::post('/update_product_confirm/{id}',[AdminController::class,'update_product_confirm']); 
+
+Route::group(['middleware' => 'web'], function () {
+    Route::get('/contact', [ContactUsFormController::class, 'create'])->name('contact.create');
+    Route::post('/contact', [ContactUsFormController::class, 'store'])->name('contact.store');
+});
 
 //footer
 route::get('/home',[FooterController::class,'home']);
