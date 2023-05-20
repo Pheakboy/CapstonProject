@@ -4,6 +4,7 @@ use App\Http\Controllers\FooterController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContactUsFormController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,6 +41,11 @@ route::get('/redirect',[HomeController::class,'redirect']);
 
 route::get('view_category',[AdminController::class,'view_category']);
 route::post('add_category',[AdminController::class,'add_category']);
+
+Route::group(['middleware' => 'web'], function () {
+    Route::get('/contact', [ContactUsFormController::class, 'create'])->name('contact.create');
+    Route::post('/contact', [ContactUsFormController::class, 'store'])->name('contact.store');
+});
 
 //footer
 route::get('/home',[FooterController::class,'home']);
