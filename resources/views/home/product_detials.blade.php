@@ -2,6 +2,8 @@
 <html>
    <head>
       <!-- Basic -->
+
+      <base href="/public">
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <!-- Mobile Metas -->
@@ -25,24 +27,54 @@
       <div class="hero_area">
          <!-- header section strats -->
         @include('home.header')
+
+        <div class="col-sm-6 col-md-4 col-lg-4" style=" margin: auto;
+                  width:50%; padding:30px">
+              
+               <div class="img-box" style="padding:20px">
+                  <img src="product/{{$product->image}}" alt="">
+               </div>
+               <div class="detail-box">
+                  <h5>
+                     {{$product->title}}
+                  </h5>
+
+                  @if($product->discount_price!=null)
+                  <h6 style="color:red;">
+                    Discount price
+                    <br>
+                    $ {{$product->discount_price}}
+                 </h6>
+
+                 
+                 <h6 style="text-decoration: line-through; color:blue;">
+                    price
+                    <br>
+                    $ {{$product->price}}
+                 </h6>
+
+                 @else
+                 
+                 <h6 style="color:blue;">
+                    $ {{$product->price}}
+                 </h6>
+                     
+                 @endif
+
+                 <h6>Product category:{{$product->category}}</h6>
+
+                 <h6>Product detiial:{{$product->description}}</h6>
+
+                 <h6>Product quantity:{{$product->quantity}}</h6>
+
+                 <a href="" class="btn btn-primary">Add to cart</a>
+
+
+               </div>
+            </div>
+        </div>
+       
          <!-- end header section -->
-         <!-- slider section -->
-        @include('home.slider')
-         <!-- end slider section -->
-      </div>
-      <!-- why section -->
-      @include('home.why')
-      <!-- end why section -->
-      @include('home.new_product')
-
-      @include('home.top_product')
-
-      @include('home.our_product')
-      <!-- arrival section -->
-      @include('home.arrive')
-      <!-- end arrival section -->
-      <!-- product section -->
-      <!-- end client section -->
       <!-- footer start -->
       @include('home.footer')
       <!-- footer end -->
