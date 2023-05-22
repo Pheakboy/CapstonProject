@@ -1,4 +1,24 @@
-@include('home.head')
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Basic -->
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <!-- Mobile Metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <!-- Site Metas -->
+      <meta name="keywords" content="" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <link rel="shortcut icon" href="home/images/favicon.png" type="">
+      <title>Famms - Fashion HTML Template</title>
+      <!-- bootstrap core css -->
+      <link rel="stylesheet" type="text/css" href="{{ asset('home/css/bootstrap.css') }}" />
+      <link href="{{ asset('home/css/font-awesome.min.css') }}" rel="stylesheet" />
+      <link href="{{ asset('home/css/style.css') }}" rel="stylesheet" />
+      <link href="{{ asset('home/css/responsive.css') }}" rel="stylesheet" />
+      
+   </head>
    <body class="sub_page">
       <div class="hero_area">
          <!-- header section strats -->
@@ -60,17 +80,24 @@
       <!-- why section -->
       <section class="why_section layout_padding">
          <div class="container">
+            @if (session('message'))
+            <div class="alert alert-success">
+              {{ session('message') }}
+            </div>
+          @endif
 
             <div class="row">
                <div class="col-lg-8 offset-lg-2">
                   <div class="full">
-                     <form action="index.html">
+        
+                     <form action="{{ route('contact.store') }}" method="POST">
+                        @csrf
                         <fieldset>
                            <input type="text" placeholder="Enter your full name" name="name" required />
                            <input type="email" placeholder="Enter your email address" name="email" required />
                            <input type="text" placeholder="Enter subject" name="subject" required />
-                           <textarea placeholder="Enter your message" required></textarea>
-                           <input type="submit" value="Submit" />
+                           <textarea placeholder="Enter your message" name="message" required></textarea>
+                           <input type="submit" value="Submit" />   
                         </fieldset>
                      </form>
                   </div>
