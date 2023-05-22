@@ -11,7 +11,11 @@
       <!-- why section -->
       @include('home.why')
       <!-- end why section -->
-      @include('home.product')
+      @include('home.new_product')
+
+      @include('home.top_product')
+
+      @include('home.our_product')
       <!-- arrival section -->
       @include('home.arrive')
       <!-- end arrival section -->

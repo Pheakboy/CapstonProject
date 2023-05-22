@@ -41,13 +41,25 @@ route::get('/redirect',[HomeController::class,'redirect']);
 
     //product which has viewed, add, show product
 route::get('/view_category',[AdminController::class,'view_category']);
+
 route::get('/view_product',[AdminController::class,'view_product']);
+
 route::post('/add_product',[AdminController::class,'add_product']);
+
+route::post('/add_category',[AdminController::class,'add_category']);
+
 route::get('/show_product',[AdminController::class,'show_product']);
-route::get('/delete_product/{id}',[AdminController::class,'delete_product']);  
+
+route::get('/delete_category/{id}',[AdminController::class,'delete_category']);  
+
 route::get('/update_product/{id}',[AdminController::class,'update_product']);   
+
 route::post('/update_product_confirm/{id}',[AdminController::class,'update_product_confirm']); 
 
+route::get('/product_detials/{id}',[HomeController::class,'product_detials']);  
+
+
+    //contact us 
 Route::group(['middleware' => 'web'], function () {
     Route::get('/contact', [ContactUsFormController::class, 'create'])->name('contact.create');
     Route::post('/contact', [ContactUsFormController::class, 'store'])->name('contact.store');
