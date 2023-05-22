@@ -58,6 +58,12 @@ route::post('/update_product_confirm/{id}',[AdminController::class,'update_produ
 
 route::get('/product_detials/{id}',[HomeController::class,'product_detials']);  
 
+route::post('/add_cart/{id}',[HomeController::class,'add_cart']);  
+
+route::get('/show_cart',[HomeController::class,'show_cart']);  
+
+route::get('/remove_cart/{id}',[HomeController::class,'remove_cart']);
+
 
     //contact us 
 Route::group(['middleware' => 'web'], function () {
