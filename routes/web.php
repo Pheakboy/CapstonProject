@@ -56,6 +56,18 @@ route::get('/update_product/{id}',[AdminController::class,'update_product']);
 
 route::post('/update_product_confirm/{id}',[AdminController::class,'update_product_confirm']); 
 
+route::get('/view_new_product',[AdminController::class,'view_new_product']);
+
+route::post('/add_new_product',[AdminController::class,'add_new_product']);
+
+route::get('/show_new_product',[AdminController::class,'show_new_product']);
+
+route::get('/delete_new_product/{id}',[AdminController::class,'delete_new_product']);
+
+route::get('/update_new_product/{id}',[AdminController::class,'update_new_product']);
+
+route::post('/update_new_product_confirm/{id}',[AdminController::class,'update_new_product_confirm']); 
+
 route::get('/product_detials/{id}',[HomeController::class,'product_detials']);  
 
 route::post('/add_cart/{id}',[HomeController::class,'add_cart']);  

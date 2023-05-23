@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
 use App\Models\Product;
+
+use App\Models\new_product;
+
 use App\Models\Cart;
 
 
@@ -18,7 +21,9 @@ class HomeController extends Controller
     public function index()
     {
         $product=Product::paginate(3);
-        return view('home.userpage',compact('product'));
+        $product1=new_product::paginate(6); 
+        return view('home.userpage',compact('product','product1'));
+       
     }
     public function redirect()
     {
@@ -29,7 +34,9 @@ class HomeController extends Controller
         else 
         {
             $product=Product::paginate(3);
-            return view('home.userpage',compact('product'));
+            $product1=new_product::paginate(6); 
+            return view('home.userpage',compact('product','product1'));
+            
         }
     }
 
