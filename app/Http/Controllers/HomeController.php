@@ -12,6 +12,8 @@ use App\Models\Product;
 
 use App\Models\new_product;
 
+use App\Models\top_product;
+
 use App\Models\Cart;
 
 
@@ -20,9 +22,10 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $product=Product::paginate(3);
+        $product=Product::paginate(6);
         $product1=new_product::paginate(6); 
-        return view('home.userpage',compact('product','product1'));
+        $product2=top_product::paginate(6); 
+        return view('home.userpage',compact('product','product1','product2'));
        
     }
     public function redirect()
@@ -33,9 +36,10 @@ class HomeController extends Controller
         }
         else 
         {
-            $product=Product::paginate(3);
+            $product=Product::paginate(6);
             $product1=new_product::paginate(6); 
-            return view('home.userpage',compact('product','product1'));
+            $product2=top_product::paginate(6); 
+            return view('home.userpage',compact('product','product1','product2'));
             
         }
     }
