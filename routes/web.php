@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactUsFormController;
+use App\Models\Category;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,12 +28,10 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-Route::get('/contact', function () {
-    return view('/home.contact');
-});
-Route::get('/product_nav', function () {
-    return view('/home.product_nav');
-});
+route::get('/show_contactForm',[ContactUsFormController::class,'show_contactForm']);
+route::post('/store',[ContactUsFormController::class,'store'])->name('store-contact');
+route::get('/show_product_nav',[HomeController::class,'show_product_nav']);
+
 Route::get('/userpage', function () {
     return view('/home.userpage');
 });
@@ -47,6 +46,8 @@ route::get('/view_product',[AdminController::class,'view_product']);
 route::post('/add_product',[AdminController::class,'add_product']);
 
 route::post('/add_category',[AdminController::class,'add_category']);
+route::get('/test', [HomeController::class, 'show_categories'])->name('home.categories_product');
+
 
 route::get('/show_product',[AdminController::class,'show_product']);
 
@@ -75,6 +76,11 @@ route::post('/add_cart/{id}',[HomeController::class,'add_cart']);
 route::get('/show_cart',[HomeController::class,'show_cart']);  
 
 route::get('/remove_cart/{id}',[HomeController::class,'remove_cart']);
+
+route::get('/cash_order',[HomeController::class,'cash_order']);
+
+
+
 
 
     //contact us 
