@@ -5,12 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use Mail;
+use App\Models\Category;
 
 class ContactUsFormController extends Controller
 {
-    public function create()
+    public function show_contactForm()
     {
-        return view('contact');
+        $categories=Category::all();
+        return view('/home.contact',compact('categories'));
     }
 
     // Store Contact Form data
@@ -34,6 +36,6 @@ class ContactUsFormController extends Controller
 
 
 
-        return redirect('/contact')->with('message', 'We have received your message and would like to thank you for writing to us.');
+        return redirect()->back()->with('message', 'We have received your message and would like to thank you for writing to us.');
     }
 }
