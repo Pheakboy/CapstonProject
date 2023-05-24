@@ -13,9 +13,9 @@
             <div class="box">
                <div class="option_container">
                   <div class="options">
-                     <a href="" class="option1">
-                     Add To Card
-                     </a>
+                     <a href="{{url('product_detials',$top_product->id)}}" class="option1">
+                        Product Detials
+                        </a>
                      <a href="" class="option2">
                      Buy Now
                      </a>

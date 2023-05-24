@@ -13,9 +13,9 @@
              <div class="box">
                 <div class="option_container">
                    <div class="options">
-                      <a href="" class="option1">
-                      Add To Card
-                      </a>
+                     <a href="{{url('product_detials',$new_product->id)}}" class="option1">
+                        Product Detials
+                        </a>
                       <form action="{{url('add_cart',$new_product->id)}}" method="Post">
                         @csrf
                         <div class = "row">
