@@ -76,8 +76,12 @@
           <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" href="{{url('/view_product')}}">Add Product</a></li>
             <li class="nav-item"> <a class="nav-link" href="{{url('/show_product')}}">Show Product</a></li>
+
             <li class="nav-item"> <a class="nav-link" href="{{url('/view_new_product')}}">Add_New_Product</a></li>
             <li class="nav-item"> <a class="nav-link" href="{{url('/show_new_product')}}">Show_New_Product</a></li>
+
+            <li class="nav-item"> <a class="nav-link" href="{{url('/view_top_product')}}">Add_Top_Product</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{url('/show_top_product')}}">Show_Top_Product</a></li>
           </ul>
         </div>
       </li>

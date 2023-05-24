@@ -10,6 +10,8 @@ use App\Models\Product;
 
 use App\Models\New_product;
 
+use App\Models\Top_product;
+
 class AdminController extends Controller
 {
 
@@ -217,4 +219,93 @@ class AdminController extends Controller
 
         return redirect()->back()->with('message','New Product Updated Successully');
     }
+
+    public function view_top_product()
+    {
+        $category=category::all();
+        return view('admin.top_product',compact('category'));
+    }
+
+    public function add_top_product(Request $request)
+    {
+        $product=new top_product();
+
+        $product->title=$request->title;
+
+        $product->description=$request->description;
+
+        $product->price=$request->price;
+
+        $product->quantity=$request->quantity;
+
+        $product->discount_price=$request->dis_price;
+
+        $product->category=$request->category;
+
+        $image=$request->image;
+
+        $imagename=time().'.'.$image->getClientOriginalExtension();
+
+        $request->image->move('top_product',$imagename);
+
+        $product->image=$imagename;
+
+        $product->save();
+
+        return redirect()->back()->with('message','Top Product Added Successully');
+    }
+
+    public function show_top_product()
+    {
+        $product=top_product::all();
+        return view('admin.show_top_product',compact('product'));
+    }
+
+    public function delete_top_product($id)
+    {
+        $product=top_product::find($id);
+
+        $product->delete();
+
+        return redirect()->back()->with('message','Delete Top Product Successfully');
+    }
+
+    public function update_top_product($id)
+    {
+        $product=top_product::find($id);
+
+        $category=category::all();
+
+        return view('admin.update_top_product',compact('product','category'));
+    }
+
+    public function update_top_product_confirm(Request $request, $id)
+    {
+        $product=top_product::find($id);
+
+        $product->title=$request->title;
+
+        $product->description=$request->description;
+
+        $product->price=$request->price;
+
+        $product->quantity=$request->quantity;
+
+        $product->discount_price=$request->dis_price;
+
+        $product->category=$request->category;
+
+        $image=$request->image;
+
+        $imagename=time().'.'.$image->getClientOriginalExtension();
+
+        $request->image->move('top_product',$imagename);
+
+        $product->image=$imagename;
+
+        $product->save();
+
+        return redirect()->back()->with('message','Top Product Updated Successully');
+    }
+
 }

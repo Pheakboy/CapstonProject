@@ -12,6 +12,8 @@ use App\Models\Product;
 
 use App\Models\new_product;
 
+use App\Models\top_product;
+
 use App\Models\Cart;
 use App\Models\Category;
 use App\Models\Order;
@@ -21,6 +23,7 @@ use App\Models\Order;
 class HomeController extends Controller
 {
     public function index()
+<<<<<<< HEAD
 {
     $product = Product::paginate(3);
     $product1 = new_product::paginate(6);
@@ -31,6 +34,15 @@ class HomeController extends Controller
     return view('home.userpage', compact('product', 'product1', 'categories'));
 }
 
+=======
+    {
+        $product=Product::paginate(6);
+        $product1=new_product::paginate(6); 
+        $product2=top_product::paginate(6); 
+        return view('home.userpage',compact('product','product1','product2'));
+       
+    }
+>>>>>>> 3f557f2352d6b03a049b8d8ca1a6dcb43ee0eed6
     public function redirect()
     {
         if(!empty(Auth::user()) && Auth::user()->usertype == 1 )
@@ -39,10 +51,17 @@ class HomeController extends Controller
         }
         else 
         {
+<<<<<<< HEAD
             $product=Product::paginate(3);
             $product1=new_product::paginate(6);
             $categories = Category::all(); 
             return view('home.userpage',compact('product','product1','categories'));
+=======
+            $product=Product::paginate(6);
+            $product1=new_product::paginate(6); 
+            $product2=top_product::paginate(6); 
+            return view('home.userpage',compact('product','product1','product2'));
+>>>>>>> 3f557f2352d6b03a049b8d8ca1a6dcb43ee0eed6
             
         }
     }
