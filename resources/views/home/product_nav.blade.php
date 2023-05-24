@@ -1,27 +1,11 @@
 @include('home.head')
    <body class="sub_page">
-      <div class="hero_area">
+      
          <!-- header section strats -->
        <!-- header section strats -->
        @include('home.header')
        <!-- end header section --> 
-
-      </div>
-      <!-- inner page section -->
-      <section class="inner_page_head">
-         <div class="container_fuild">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="full">
-                     <h3>Product Grid</h3>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- end inner page section -->
-      <!-- product section -->
-      <section class="product_section layout_padding">
+       <section class="product_section layout_padding">
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
@@ -29,393 +13,74 @@
                </h2>
             </div>
             <div class="row">
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Men's Shirt
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/ball3.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                          ball
-                        </h5>
-                        <h6>
-                           $75
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/ball4.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           ball
-                        </h5>
-                        <h6>
-                           $80
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/ball5.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                        ball
-                        </h5>
-                        <h6>
-                           $68
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/ball6.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                        ball
-                        </h5>
-                        <h6>
-                           $70
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/a1 (8).jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                        Clothes
-                        </h5>
-                        <h6>
-                           $75
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/a1 (2).jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Clothes
-                        </h5>
-                        <h6>
-                           $58
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/a1 (3).jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Clothes
-                        </h5>
-                        <h6>
-                           $80
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/a1 (3).jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Clothes
-                        </h5>
-                        <h6>
-                           $65
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/Shoes6.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Shoes
-                        </h5>
-                        <h6>
-                           $65
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/Shoes7.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                        Shoes
-                        </h5>
-                        <h6>
-                           $65
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/Shoes8.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Shoes
-                        </h5>
-                        <h6>
-                           $65
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/Shoes9.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Shoes
-                        </h5>
-                        <h6>
-                           $65
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="btn-box">
-               <a href="">
-               View All products
-               </a>
-            </div>
-         </div>
-      </section>
-      <!-- end product section -->
-      <!-- footer section -->
-      <!-- <footer class="footer_section">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-4 footer-col">
-                  <div class="footer_contact">
-                     <h4>
-                        Reach at..
-                     </h4>
-                     <div class="contact_link_box">
-                        <a href="">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>
-                        Location
-                        </span>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <span>
-                        Call +01 1234567890
-                        </span>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <span>
-                        demo@gmail.com
-                        </span>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4 footer-col">
-                  <div class="footer_detail">
-                     <a href="index.html" class="footer-logo">
-                     Famms
-                     </a>
-                     <p>
-                        Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
-                     </p>
-                     <div class="footer_social">
-                        <a href="">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-pinterest" aria-hidden="true"></i>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4 footer-col">
-                  <div class="map_container">
-                     <div class="map">
-                        <div id="googleMap"></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="footer-info">
-               <div class="col-lg-7 mx-auto px-0">
-                  <p>
-                     &copy; <span id="displayYear"></span> All Rights Reserved By
-                     <a href="https://html.design/">Free Html Templates</a><br>
 
-                     Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
-                  </p>
-               </div>
-            </div>
-         </div>
-      </footer> -->
+       @foreach ($product as $products)
+
+       <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="box">
+             <div class="option_container">
+                <div class="options">
+                   <a href="{{url('product_detials',$products->id)}}" class="option1">
+                   Product Detials
+                   </a>
+                   <form action="{{url('add_cart',$products->id)}}" method="Post">
+                     @csrf
+                     <div class = "row">
+                        <div class = "col-md-4">
+                           <input type = "number" name="quantity" value = "1" min="1" stype="width:50px">
+                        </div>
+                        <div class="col-md-4">    
+                            <input type = "submit" value = "Add To Cart">
+                        </div>
+                     </div>
+                 
+                  </form>
+                </div>
+             </div>
+             <div class="img-box">
+                <img src="product/{{$products->image}}" alt="">
+             </div>
+             <div class="detail-box">
+                <h5>
+                   {{$products->title}}
+                </h5>
+
+                @if($products->discount_price!=null)
+                <h6 style="color:red;">
+                  Discount price
+                  <br>
+                  $ {{$products->discount_price}}
+               </h6>
+
+               
+               <h6 style="text-decoration: line-through; color:blue;">
+                  price
+                  <br>
+                  $ {{$products->price}}
+               </h6>
+
+               @else
+               
+               <h6 style="color:blue;">
+                  $ {{$products->price}}
+               </h6>
+                   
+               @endif
+
+
+             </div>
+          </div>
+       </div>
+       
+       @endforeach
+
+       <span style="padding-top: 20px;">
+         {!!$product->withQueryString()->links('pagination::bootstrap-5') !!}
+    </span>
+      
+      <!-- inner page section -->
+   
+      {{-- </footer>  --}}
       @include('home.footer')
       <!-- footer section -->
       <!-- jQery -->

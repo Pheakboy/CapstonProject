@@ -102,7 +102,9 @@ class HomeController extends Controller
         {
             $categories = Category:: all();
 
-            return view('home.product_nav',compact('categories'));
+            $product = Product::paginate(3);
+
+            return view('home.product_nav',compact('categories','product'));
         }
 
         public function show_cart()
