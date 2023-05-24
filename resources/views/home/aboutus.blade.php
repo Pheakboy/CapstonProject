@@ -5,14 +5,14 @@
     <header class="header_section">
         <div class="container">
             <nav class="navbar navbar-expand-lg custom_nav-container ">
-                <a class="navbar-brand" href="/userpage"><img width="250" src="images/GSport.png" alt="#" /></a>
+                <a class="navbar-brand" href="{{url('/')}}"><img width="250" src="images/GSport.png" alt="#" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class=""> </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="userpage">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Sport <span class="caret"></span></a>
@@ -27,7 +27,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="product_nav">Products</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="contact">Contact</a>
                         </li>
@@ -310,20 +309,20 @@
     <div class="container">
         <div class="box">
             <div class="arrival_bg_box">
-                <img src="images/arrival-bg.png" alt="">
+                <img src="images/sponsor.png" alt="">
             </div>
             <div class="row">
                 <div class="col-md-6 ml-auto">
                     <div class="heading_container remove_line_bt">
                         <h2>
-                            #NewArrivals
+                            #Partner
                         </h2>
                     </div>
                     <p style="margin-top: 20px;margin-bottom: 30px;">
-                        Vitae fugiat laboriosam officia perferendis provident aliquid voluptatibus dolorem, fugit ullam sit earum id eaque nisi hic? Tenetur commodi, nisi rem vel, ea eaque ab ipsa, autem similique ex unde!
+                        Be our partner for promote your products from your factory or anything by sponsor and collaborate with us!
                     </p>
-                    <a href="">
-                        Shop Now
+                    <a href="contact">
+                        Interest
                     </a>
                 </div>
             </div>
