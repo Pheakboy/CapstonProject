@@ -100,6 +100,10 @@ route::get('/remove_cart/{id}',[HomeController::class,'remove_cart']);
 
 route::get('/cash_order',[HomeController::class,'cash_order']);
 
+route::get('/order',[AdminController::class,'order']);
+
+route::get('/delivered/{id}',[AdminController::class,'delivered']);
+
 
 
 

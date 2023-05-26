@@ -12,6 +12,8 @@ use App\Models\New_product;
 
 use App\Models\Top_product;
 
+use App\Models\Order;
+
 class AdminController extends Controller
 {
 
@@ -306,6 +308,21 @@ class AdminController extends Controller
         $product->save();
 
         return redirect()->back()->with('message','Top Product Updated Successully');
+    }
+
+    public function order()
+    {
+        $order= order::all();
+       return view('admin.order',compact('order'));
+    }
+
+    public function delivered($id)
+    {
+        $order=order::find($id);
+        $order->delivery_status="delivered";
+        $order->payment_status='Paid';
+        $order->save();
+        return redirect()->back()->with('message','Order delivered Successully');
     }
 
 }
