@@ -173,16 +173,15 @@ class HomeController extends Controller
         }
 
         
-    //     public function show_categories(Request $request)
-    // {
-    //     dd($request);
-    //     // Retrieve products based on the category name
-    //     $product = Product::where('category', $categoryName)->paginate(6);
-    //     $categories = Category::all();
-    //     // Pass the products and category name to the view
+        public function show_categories($categoryName)
+    {
+        // Retrieve products based on the category name
+        $product = Product::where('category', $categoryName)->paginate(6);
+        $categories = Category::all();
+        // Pass the products and category name to the view
    
-    //     return view('home.categories_product', compact('products', 'categoryName','categories'));
-    // }
+        return view('home.categories_product', compact('product', 'categoryName','categories'));
+    }
 }
   
 

@@ -46,7 +46,8 @@ route::get('/view_product',[AdminController::class,'view_product']);
 route::post('/add_product',[AdminController::class,'add_product']);
 
 route::post('/add_category',[AdminController::class,'add_category']);
-route::get('/test', [HomeController::class, 'show_categories'])->name('home.categories_product');
+Route::get('/show_categories/{categoryName}', [HomeController::class, 'show_categories'])->name('show_categories');
+
 
 
 route::get('/show_product',[AdminController::class,'show_product']);

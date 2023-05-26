@@ -14,7 +14,7 @@
                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Sport<span class="caret"></span></a>
                    <ul class="dropdown-menu">
                      @foreach($categories as $category)
-                      <li><a href="">{{$category->category_name}}</a></li>
+                     <li><a href="{{route('show_categories', ['categoryName' => $category->category_name])}}">{{$category->category_name}}</a></li>
                      @endforeach
                    </ul>
                 </li>
