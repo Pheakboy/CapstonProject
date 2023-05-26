@@ -76,7 +76,7 @@
                         <td>{{$product->price}}</td>
                         <td>{{$product->discount_price}}</td>
                         <td>
-                            <img class="image_size" src="/new_product/{{$product->image}}">
+                            <img class="image_size" src="/product/{{$product->image}}">
                             <td>
                                 <a class="btn btn-danger" onclick="return confirm('Are you sure to delete this')" href="{{url('delete_new_product',$product->id)}}">Delete</a>
                             </td>

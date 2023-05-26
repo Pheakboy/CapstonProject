@@ -22,7 +22,7 @@
                         <h3>Menu</h3>
                         <ul>
                            <li><a href="{{url('/')}}">Home</a></li>
-                           <li><a href="product_nav">Product</a></li>
+                           <li><a href="{{url('show_product_nav')}}">Product</a></li>
                            <li><a href="contact">Contact</a></li>
                            <li><a href="aboutus">About</a></li>
                         </ul>
@@ -35,7 +35,7 @@
                            <li><a href="#">Account</a></li>
                            <li><a href="login">Login</a></li>
                            <li><a href="register">Register</a></li>
-                           <li><a href="#">Shopping</a></li>
+                           <li><a href="{{url('show_product_nav')}}">Shopping</a></li>
                         </ul>
                      </div>
                   </div>
