@@ -272,6 +272,13 @@ class HomeController extends Controller
    
         return view('home.categories_product', compact('product', 'categoryName','categories'));
     }
+
+        public function stripe($totalprice)
+        {
+
+            
+            return view('home.stripe',compact('totalprice'));
+        }
 }
   
 
