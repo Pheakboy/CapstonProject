@@ -156,7 +156,7 @@ class AdminController extends Controller
 
         $imagename=time().'.'.$image->getClientOriginalExtension();
 
-        $request->image->move('new_product',$imagename);
+        $request->image->move('product',$imagename);
 
         $product->image=$imagename;
 
@@ -211,7 +211,7 @@ class AdminController extends Controller
 
         $imagename=time().'.'.$image->getClientOriginalExtension();
 
-        $request->image->move('new_product',$imagename);
+        $request->image->move('product',$imagename);
 
         $product->image=$imagename;
 
@@ -246,7 +246,7 @@ class AdminController extends Controller
 
         $imagename=time().'.'.$image->getClientOriginalExtension();
 
-        $request->image->move('top_product',$imagename);
+        $request->image->move('product',$imagename);
 
         $product->image=$imagename;
 
@@ -299,7 +299,7 @@ class AdminController extends Controller
 
         $imagename=time().'.'.$image->getClientOriginalExtension();
 
-        $request->image->move('top_product',$imagename);
+        $request->image->move('product',$imagename);
 
         $product->image=$imagename;
 

@@ -13,10 +13,10 @@
              <div class="box">
                 <div class="option_container">
                    <div class="options">
-                     <a href="{{url('product_detials',$new_product->id)}}" class="option1">
+                     <a href="{{url('new_product_detials',$new_product->id)}}" class="option1">
                         Product Detials
                         </a>
-                      <form action="{{url('add_cart',$new_product->id)}}" method="Post">
+                      <form action="{{url('add_cart_newp',$new_product->id)}}" method="Post">
                         @csrf
                         <div class = "row">
                            <div class = "col-md-4">
@@ -31,7 +31,7 @@
                    </div>
                 </div>
                 <div class="img-box">
-                   <img src="new_product/{{$new_product->image}}" alt="">
+                   <img src="product/{{$new_product->image}}" alt="">
                 </div>
                 <div class="detail-box">
                    <h5>

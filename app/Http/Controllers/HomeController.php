@@ -25,8 +25,8 @@ class HomeController extends Controller
     public function index()
 {
     $product = Product::paginate(3);
-    $product1 = new_product::paginate(6);
-    $product2 = top_product::paginate(6);
+    $product1 = new_product::paginate(3);
+    $product2 = top_product::paginate(3);
     $categories = Category::all();
 
     // dd($categories);
@@ -43,8 +43,8 @@ class HomeController extends Controller
         else 
         {
             $product=Product::paginate(3);
-            $product1=new_product::paginate(6);
-            $product2 = top_product::paginate(6);
+            $product1=new_product::paginate(3);
+            $product2 = top_product::paginate(3);
             $categories = Category::all(); 
             return view('home.userpage',compact('product','product1','product2','categories'));
             
@@ -56,6 +56,20 @@ class HomeController extends Controller
         $product=product::find($id);
         $categories=Category::all();
         return view('home.product_detials', compact('product','categories'));
+    }
+
+    public function new_product_detials($id)
+    {
+        $product=new_product::find($id);
+        $categories=Category::all();
+        return view('home.new_product_detials', compact('product','categories'));
+    }
+
+    public function top_product_detials($id)
+    {
+        $product=top_product::find($id);
+        $categories=Category::all();
+        return view('home.top_product_detials', compact('product','categories'));
     }
 
     //add_cart funtion
@@ -86,6 +100,82 @@ class HomeController extends Controller
             
             $cart -> image = $product -> image;
             $cart -> Product_id = $product -> id;
+            $cart -> quantity = $request->quantity;
+            
+
+            $cart -> save();
+            return redirect()->back();
+        }
+        else
+        {
+            return redirect('login');
+        }
+    }
+
+    public function add_cart_newp(Request $request,$id)
+    {
+        if(Auth::id())
+        {
+            $user = Auth::user();
+            $product1 = new_product::find($id);
+            $cart = new cart;
+            $cart -> name = $user -> name; 
+            $cart -> email = $user -> email;
+            $cart -> phone = $user -> phone;
+            $cart -> address = $user -> address;
+            $cart -> user_id = $user -> id;
+
+            $cart -> product_title = $product1 -> title;
+
+            if ($product1 -> discount_price!=Null)
+            {
+                $cart -> price = $product1 -> discount_price *  $request->quantity;
+            }
+            else
+            {
+                $cart -> price = $product1 -> price *  $request->quantity;
+            }
+            
+            $cart -> image = $product1 -> image;
+            $cart -> Product_id = $product1 -> id;
+            $cart -> quantity = $request->quantity;
+            
+
+            $cart -> save();
+            return redirect()->back();
+        }
+        else
+        {
+            return redirect('login');
+        }
+    }
+
+    public function add_cart_topp(Request $request,$id)
+    {
+        if(Auth::id())
+        {
+            $user = Auth::user();
+            $product2 = top_product::find($id);
+            $cart = new cart;
+            $cart -> name = $user -> name; 
+            $cart -> email = $user -> email;
+            $cart -> phone = $user -> phone;
+            $cart -> address = $user -> address;
+            $cart -> user_id = $user -> id;
+
+            $cart -> product_title = $product2 -> title;
+
+            if ($product2 -> discount_price!=Null)
+            {
+                $cart -> price = $product2 -> discount_price *  $request->quantity;
+            }
+            else
+            {
+                $cart -> price = $product2 -> price *  $request->quantity;
+            }
+            
+            $cart -> image = $product2 -> image;
+            $cart -> Product_id = $product2 -> id;
             $cart -> quantity = $request->quantity;
             
 

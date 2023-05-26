@@ -46,6 +46,7 @@ route::get('/view_product',[AdminController::class,'view_product']);
 route::post('/add_product',[AdminController::class,'add_product']);
 
 route::post('/add_category',[AdminController::class,'add_category']);
+
 route::get('/test', [HomeController::class, 'show_categories'])->name('home.categories_product');
 
 
@@ -81,9 +82,17 @@ route::get('/update_top_product/{id}',[AdminController::class,'update_top_produc
 
 route::post('/update_top_product_confirm/{id}',[AdminController::class,'update_top_product_confirm']); 
 
-route::get('/product_detials/{id}',[HomeController::class,'product_detials']);  
+route::get('/product_detials/{id}',[HomeController::class,'product_detials']); 
+
+route::get('/new_product_detials/{id}',[HomeController::class,'new_product_detials']);
+
+route::get('/top_product_detials/{id}',[HomeController::class,'top_product_detials']);
 
 route::post('/add_cart/{id}',[HomeController::class,'add_cart']);  
+
+route::post('/add_cart_newp/{id}',[HomeController::class,'add_cart_newp']);
+
+route::post('/add_cart_topp/{id}',[HomeController::class,'add_cart_topp']);
 
 route::get('/show_cart',[HomeController::class,'show_cart']);  
 
