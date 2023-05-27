@@ -15,10 +15,33 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
 }
+.nav-item .btn-primary{
+  background-color: rgb(225,197,132) ;
+  color: #000;
+  border: 10px;
+}
+.nav-item .btn-success{
+  background-color: rgb(225,197,132) ;
+  color: #000;
+  border: 10px;
+}
 /* test search button */
 .input-group{
-  margin-left: 10px;
+  margin-left: 5px;
+  width:155px;
+
 }
+.input-group .form-control{
+  border-radius: 10px;
+  width: 85px;
+}
+
+.input-group .input-group-append .btn{
+  width: 65px;
+  background-color:  #FFBD59 ;
+  padding: 0;
+  border: 10px;
+} 
 
 /* test */
 
