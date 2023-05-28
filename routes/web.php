@@ -125,6 +125,8 @@ route::post('/add_comment',[HomeController::class,'add_comment'])->name('Store_c
 
 route::post('/add_reply',[HomeController::class,'add_reply']);
 
+route::get('/product_search',[HomeController::class,'product_search']);
+
 
 
 

@@ -397,6 +397,18 @@ class HomeController extends Controller
                 return redirect('login');
             }
         }
+
+        public function product_search(Request $request)
+        {
+            $search_text = $request -> search;
+            $product = product::where('title','LIKE',"%$search_text%")->paginate(6);
+            $product1=new_product::where('title','LIKE',"%$search_text%")->paginate(6);
+            $product2 = top_product::where('title','LIKE',"%$search_text%")->paginate(6);
+            $categories=Category::all();
+
+            return view('home.afterSearch', compact('product','product1','product2','categories'));
+
+        }
 }
   
 
