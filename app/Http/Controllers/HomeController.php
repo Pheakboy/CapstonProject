@@ -27,7 +27,7 @@ class HomeController extends Controller
 {
     public function index()
 {
-    $product = Product::paginate(3);
+    $product = Product::paginate(6);
     $product1 = new_product::paginate(3);
     $product2 = top_product::paginate(3);
     $categories = Category::all();
@@ -47,9 +47,9 @@ class HomeController extends Controller
         }
         else 
         {
-            $product=Product::paginate(3);
-            $product1=new_product::paginate(3);
-            $product2 = top_product::paginate(3);
+            $product=Product::paginate(6);
+            $product1=new_product::paginate(6);
+            $product2 = top_product::paginate(6);
             $categories = Category::all(); 
             $comments  = Comment::all();
             $reply = Reply::all();
