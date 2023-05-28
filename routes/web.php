@@ -108,6 +108,9 @@ route::get('/show_order',[HomeController::class,'show_order']);
 
 route::get('/Cancel_order/{id}',[HomeController::class,'Cancel_order']);
 
+route::post('/add_comment',[HomeController::class,'add_comment'])->name('Store_comment');
+
+route::post('/add_reply',[HomeController::class,'add_reply']);
 
 
 
