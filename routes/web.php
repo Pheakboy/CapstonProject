@@ -36,7 +36,7 @@ Route::get('/userpage', function () {
     return view('/home.userpage');
 });
     //admin dashboard
-route::get('/redirect',[HomeController::class,'redirect']);
+route::get('/redirect',[HomeController::class,'redirect']) ->middleware('auth','verified');
 
     //product which has viewed, add, show product
 route::get('/view_category',[AdminController::class,'view_category']);
@@ -105,11 +105,11 @@ Route::post('stripe/{totalprice}',[HomeController::class, 'stripePost'])->name('
 
 
 
-    //contact us 
-Route::group(['middleware' => 'web'], function () {
-    Route::get('/contact', [ContactUsFormController::class, 'create'])->name('contact.create');
-    Route::post('/contact', [ContactUsFormController::class, 'store'])->name('contact.store');
-});
+//     //contact us 
+// Route::group(['middleware' => 'web'], function () {
+//     Route::get('/contact', [ContactUsFormController::class, 'create'])->name('contact.create');
+//     Route::post('/contact', [ContactUsFormController::class, 'store'])->name('contact.store');
+// });
 
 //footer
 route::get('/home',[FooterController::class,'home']);
