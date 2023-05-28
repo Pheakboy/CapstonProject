@@ -46,6 +46,7 @@ route::get('/view_product',[AdminController::class,'view_product']);
 route::post('/add_product',[AdminController::class,'add_product']);
 
 route::post('/add_category',[AdminController::class,'add_category']);
+
 Route::get('/show_categories/{categoryName}', [HomeController::class, 'show_categories'])->name('show_categories');
 
 
@@ -100,7 +101,20 @@ route::get('/remove_cart/{id}',[HomeController::class,'remove_cart']);
 
 route::get('/cash_order',[HomeController::class,'cash_order']);
 
+route::get('/order',[AdminController::class,'order']);
+
+route::get('/delivered/{id}',[AdminController::class,'delivered']);
+
+
+
+
+
+
+
+
+
 Route::get('/stripe/{totalprice}', [HomeController::class, 'stripe'])->name('stripe');
+
 Route::post('stripe/{totalprice}',[HomeController::class, 'stripePost'])->name('stripe.post');
 
 
