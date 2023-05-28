@@ -101,7 +101,14 @@ route::get('/remove_cart/{id}',[HomeController::class,'remove_cart']);
 route::get('/cash_order',[HomeController::class,'cash_order']);
 
 Route::get('/stripe/{totalprice}', [HomeController::class, 'stripe'])->name('stripe');
+
 Route::post('stripe/{totalprice}',[HomeController::class, 'stripePost'])->name('stripe.post');
+
+route::get('/show_order',[HomeController::class,'show_order']);
+
+route::get('/Cancel_order/{id}',[HomeController::class,'Cancel_order']);
+
+
 
 
 

@@ -28,6 +28,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{{url('show_cart')}}">Cart</a>
                </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="{{url('show_order')}}">Order</a>
+               </li>
 
                 <!-- <form class="form-inline">
                   <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
@@ -47,11 +50,11 @@
 
                @else
 
-                <li class="nav-item">
+                <li class="nav-item" >
                   <a class="btn btn-primary" id="logincss" href="{{ route('login') }}">Login</a>
                </li>
 
-               <li class="nav-item">
+               <li class="nav-item" >
                   <a class="btn btn-success" href="{{ route('register') }}">Register</a>
                </li>
 
@@ -61,7 +64,7 @@
                   <div class="input-group">
                      <input type="text" class="form-control" placeholder="Search">
                      <div class="input-group-append">
-                        <button  class="btn" type="submit">Search</button>
+                        <button  class="btn" type="submit" >Search</button>
                      </div>
                   </div>
       
