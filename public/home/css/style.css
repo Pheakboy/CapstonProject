@@ -25,15 +25,17 @@ body {
   color: #000;
   border: 10px;
 }
+
 /* test search button */
-.input-group{
+.form-inline .input-group{
   margin-left: 5px;
-  width:155px;
+  width: 160px;
+  height: auto;
 
 }
 .input-group .form-control{
   border-radius: 10px;
-  width: 85px;
+  width: 95px;
 }
 
 .input-group .input-group-append .btn{
@@ -203,7 +205,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
   color: #f7444e;
-}
+} 
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link svg, .custom_nav-container .navbar-nav .nav-item.active .nav-link svg {
   fill: #f7444e;
