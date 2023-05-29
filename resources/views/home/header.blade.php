@@ -60,9 +60,9 @@
 
                @endauth
                 @endif
-                  <form class="form-inline">
+                  <form class="form-inline" action="{{url('product_search')}}" method="GET">
                   <div class="input-group">
-                     <input type="text" class="form-control" placeholder="Search">
+                     <input class="form-control" type="text" name="search"  placeholder="Search">
                      <div class="input-group-append">
                         <button  class="btn" type="submit" >Search</button>
                      </div>
