@@ -137,8 +137,6 @@ class HomeController extends Controller
             return redirect()->back()->with('message','Product Added Successfully');
             }
 
-
-            
         }
         else
         {

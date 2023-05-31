@@ -16,6 +16,7 @@
             width: 100%;
             margin: auto;
             text-align: center;
+            font-size:10px;
         }
         .th_deg{
             background-color: skyblue;
