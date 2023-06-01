@@ -26,7 +26,7 @@
                    <a class="nav-link" href="{{url('show_contactForm')}}">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{url('show_cart')}}">Cart</a>
+                  <a class="nav-link" href="{{url('show_cart')}}">Cart[{{$count}}]</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="{{url('show_order')}}">Order</a>
