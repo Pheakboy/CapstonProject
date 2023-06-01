@@ -27,9 +27,9 @@ class HomeController extends Controller
 {
     public function index()
 {
-    $product = Product::paginate(9);
-    $product1 = new_product::paginate(6);
-    $product2 = top_product::paginate(6);
+    $product = Product::paginate(6);
+    $product1 = new_product::paginate(3);
+    $product2 = top_product::paginate(3);
     $categories = Category::all();
     $comments  = Comment::all();
     $reply = Reply::all();
@@ -53,7 +53,7 @@ class HomeController extends Controller
         }
         else 
         {
-            $product=Product::paginate(9);
+            $product=Product::paginate(6);
             $product1=new_product::paginate(6);
             $product2 = top_product::paginate(6);
             $categories = Category::all(); 
@@ -70,27 +70,39 @@ class HomeController extends Controller
     {
         $product=product::find($id);
         $categories=Category::all();
-        $user = auth()->user();
-         $count = cart::where('name',$user->name)->count();
+        $user = auth()->user(); // Use the auth() helper function instead of auth::user()
+    $count = 0; // Initialize $count to 0
+
+    if ($user) {
+        $count = cart::where('name', $user->name)->count();
+    }
         return view('home.product_detials', compact('product','categories','count'));
     }
 
     public function new_product_detials($id)
     {
-        $product=new_product::find($id);
+        $product1=new_product::find($id);
         $categories=Category::all();
-        $user = auth()->user();
-         $count = cart::where('name',$user->name)->count();
-        return view('home.new_product_detials', compact('product','categories','count'));
+        $user = auth()->user(); // Use the auth() helper function instead of auth::user()
+    $count = 0; // Initialize $count to 0
+
+    if ($user) {
+        $count = cart::where('name', $user->name)->count();
+    }
+        return view('home.new_product_detials', compact('product1','categories','count'));
     }
 
     public function top_product_detials($id)
     {
-        $product=top_product::find($id);
+        $product2=top_product::find($id);
         $categories=Category::all();
-        $user = auth()->user();
-         $count = cart::where('name',$user->name)->count();
-        return view('home.top_product_detials', compact('product','categories','count'));
+        $user = auth()->user(); // Use the auth() helper function instead of auth::user()
+        $count = 0; // Initialize $count to 0
+    
+        if ($user) {
+            $count = cart::where('name', $user->name)->count();
+        }
+        return view('home.top_product_detials', compact('product2','categories','count'));
     }
 
     //add_cart funtion
@@ -152,6 +164,8 @@ class HomeController extends Controller
             return redirect()->back()->with('message','Product Added Successfully');
             }
 
+
+            
         }
         else
         {
@@ -364,9 +378,16 @@ class HomeController extends Controller
         // Retrieve products based on the category name
         $product = Product::where('category', $categoryName)->paginate(6);
         $categories = Category::all();
+        $user = auth()->user(); // Use the auth() helper function instead of auth::user()
+    $count = 0; // Initialize $count to 0
+
+    if ($user) {
+        $count = cart::where('name', $user->name)->count();
+    }
+        
         // Pass the products and category name to the view
    
-        return view('home.categories_product', compact('product', 'categoryName','categories'));
+        return view('home.categories_product', compact('product', 'categoryName','categories','count'));
     }
 
         public function stripe(Request $request,$totalprice)
