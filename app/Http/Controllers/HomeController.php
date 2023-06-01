@@ -62,8 +62,12 @@ class HomeController extends Controller
     {
         $product=product::find($id);
         $categories=Category::all();
-        $user = auth()->user();
-         $count = cart::where('name',$user->name)->count();
+        $user = auth()->user(); // Use the auth() helper function instead of auth::user()
+    $count = 0; // Initialize $count to 0
+
+    if ($user) {
+        $count = cart::where('name', $user->name)->count();
+    }
         return view('home.product_detials', compact('product','categories','count'));
     }
 
@@ -71,18 +75,26 @@ class HomeController extends Controller
     {
         $product1=new_product::find($id);
         $categories=Category::all();
-        $user = auth()->user();
-         $count = cart::where('name',$user->name)->count();
-        return view('home.new_product_detials', compact('product','categories','count'));
+        $user = auth()->user(); // Use the auth() helper function instead of auth::user()
+    $count = 0; // Initialize $count to 0
+
+    if ($user) {
+        $count = cart::where('name', $user->name)->count();
+    }
+        return view('home.new_product_detials', compact('product1','categories','count'));
     }
 
     public function top_product_detials($id)
     {
         $product2=top_product::find($id);
         $categories=Category::all();
-        $user = auth()->user();
-         $count = cart::where('name',$user->name)->count();
-        return view('home.top_product_detials', compact('product','categories','count'));
+        $user = auth()->user(); // Use the auth() helper function instead of auth::user()
+        $count = 0; // Initialize $count to 0
+    
+        if ($user) {
+            $count = cart::where('name', $user->name)->count();
+        }
+        return view('home.top_product_detials', compact('product2','categories','count'));
     }
 
     //add_cart funtion
