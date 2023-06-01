@@ -62,21 +62,27 @@ class HomeController extends Controller
     {
         $product=product::find($id);
         $categories=Category::all();
-        return view('home.product_detials', compact('product','categories'));
+        $user = auth()->user();
+         $count = cart::where('name',$user->name)->count();
+        return view('home.product_detials', compact('product','categories','count'));
     }
 
     public function new_product_detials($id)
     {
-        $product=new_product::find($id);
+        $product1=new_product::find($id);
         $categories=Category::all();
-        return view('home.new_product_detials', compact('product','categories'));
+        $user = auth()->user();
+         $count = cart::where('name',$user->name)->count();
+        return view('home.new_product_detials', compact('product','categories','count'));
     }
 
     public function top_product_detials($id)
     {
-        $product=top_product::find($id);
+        $product2=top_product::find($id);
         $categories=Category::all();
-        return view('home.top_product_detials', compact('product','categories'));
+        $user = auth()->user();
+         $count = cart::where('name',$user->name)->count();
+        return view('home.top_product_detials', compact('product','categories','count'));
     }
 
     //add_cart funtion
@@ -349,9 +355,16 @@ class HomeController extends Controller
         // Retrieve products based on the category name
         $product = Product::where('category', $categoryName)->paginate(6);
         $categories = Category::all();
+        $user = auth()->user(); // Use the auth() helper function instead of auth::user()
+    $count = 0; // Initialize $count to 0
+
+    if ($user) {
+        $count = cart::where('name', $user->name)->count();
+    }
+        
         // Pass the products and category name to the view
    
-        return view('home.categories_product', compact('product', 'categoryName','categories'));
+        return view('home.categories_product', compact('product', 'categoryName','categories','count'));
     }
 
         public function stripe(Request $request,$totalprice)

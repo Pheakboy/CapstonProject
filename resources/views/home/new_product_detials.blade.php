@@ -32,42 +32,48 @@
                   width:50%; padding:30px">
               
                <div class="img-box" style="padding:20px">
-                  <img src="product/{{$product->image}}" alt="">
+                  <img src="product/{{$product1->image}}" alt="">
                </div>
                <div class="detail-box">
                   <h5>
-                     {{$product->title}}
+                     {{$product1->title}}
                   </h5>
 
-                  @if($product->discount_price!=null)
+                  @if($product1->discount_price!=null)
                   <h6 style="color:red;">
                     Discount price
                     <br>
-                    $ {{$product->discount_price}}
+                    $ {{$product1->discount_price}}
                  </h6>
 
                  
                  <h6 style="text-decoration: line-through; color:blue;">
                     price
                     <br>
-                    $ {{$product->price}}
+                    $ {{$product1->price}}
                  </h6>
 
                  @else
                  
                  <h6 style="color:blue;">
-                    $ {{$product->price}}
+                    $ {{$product1->price}}
                  </h6>
                      
                  @endif
 
-                 <h6>Product category:{{$product->category}}</h6>
+                 <h6>Product category:{{$product1->category}}</h6>
 
-                 <h6>Product detiial:{{$product->description}}</h6>
+                 <h6>Product detiial:{{$product1->description}}</h6>
 
+<<<<<<< HEAD
                  <h6>Product quantity:{{$product->quantity }}</h6>
 
                  <form action="{{url('add_cart',$product->id)}}" method="Post">
+=======
+                 <h6>Product quantity:{{$product1->quantity }}</h6>
+                  
+                 <form action="{{url('add_cart_newp',$product1->id)}}" method="Post">
+>>>>>>> 9c8082a3f5a6e8e41025b5d4dda4a324aae3d9c8
                   @csrf
                   <div class = "row">
                      <div class = "col-md-4">
