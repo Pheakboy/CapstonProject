@@ -14,9 +14,7 @@
                 <p style="margin-top: 20px;margin-bottom: 30px;">
                 Host: "Ladies and gentlemen, welcome to our highly anticipated shoe arrival event! We're thrilled to showcase the latest collection of stylish and trendy footwear. Get ready to witness an array of stunning designs and impeccable craftsmanship. Without further ado, let's kick off this exciting show!"
                 </p> 
-                <a href="our_product">
-                Shop Now
-                </a>
+              
              </div>
           </div>
        </div>
