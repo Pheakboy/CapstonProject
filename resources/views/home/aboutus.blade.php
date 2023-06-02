@@ -168,7 +168,7 @@
 <br>
 <!-- end members section -->
 <!-- arrival section -->
-<section class="arrival_section">
+<!-- <section class="arrival_section">
     <div class="container">
         <div class="box">
             <div class="arrival_bg_box">
@@ -191,7 +191,28 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
+<section class="arrival_section">
+      <div class="container">
+         <div class="box">
+            <div class="arrival_bg_box">
+               <img src="images/partner.png" alt="">
+            </div>
+            <div class="arrival_bg_title">
+               <div class="titile_top">
+                  <h2> #Partner</h2>
+               </div>
+               <div class="title_center">
+                  <p> Be our partner for promote your products from your factory or anything by sponsor and collaborate with us. Please Contact us for information!</p>
+               </div>
+               <div class="title_buttom">
+                  <a href="#">Shop now </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
 
 <!-- end arrival section -->
 <!-- footer section -->
