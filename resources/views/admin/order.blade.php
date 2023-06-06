@@ -38,6 +38,18 @@
             <div class="content-wrapper">
 
                 <h1 class="title_order">All Orders</h1>
+
+
+                <div style="padding-left: 400px; padding-bottom: 30px;">
+                    <form action="{{url('search')}}" method="get">
+                        @csrf
+                        <input type="text" style="color:black;" name="search" placeholder="Search for products">
+
+                        <input type="submit" value="search" class="btn btn-outline-primary">
+                    </form>
+                </div>
+
+
                 <table class="table_order">
                     <tr class="th_deg">
                         <th style="padding: 10px;">Name</th>

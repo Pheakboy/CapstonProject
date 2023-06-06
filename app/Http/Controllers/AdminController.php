@@ -325,4 +325,12 @@ class AdminController extends Controller
         return redirect()->back()->with('message','Order delivered Successully');
     }
 
+    public function searchdata(Request $request)
+    {
+        $searchText=$request->search;
+        $order=order::where('name','LIKE',"%$searchText%")->orwhere('phone','LIKE',"%$searchText%")->orwhere('product_title','LIKE',"%$searchText%")->get();
+
+        return view('admin.order',compact('order'));
+    }
+
 }
