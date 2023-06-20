@@ -65,21 +65,18 @@
 
                  <h6>Product detiial:{{$product1->description}}</h6>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                 <h6>Product quantity:{{$product->quantity }}</h6>
 
-                 <form action="{{url('add_cart',$product->id)}}" method="Post">
-=======
+                 <h6>Product quantity:{{$product1->quantity }}</h6>
+
+                 <form action="{{url('add_cart',$product1->id)}}" method="Post">
+
                  <h6>Product quantity:{{$product1->quantity }}</h6>
                   
                  <form action="{{url('add_cart_newp',$product1->id)}}" method="Post">
->>>>>>> 9c8082a3f5a6e8e41025b5d4dda4a324aae3d9c8
-=======
+
                  <h6>Product quantity:{{$product1->quantity }}</h6>
                   
                  <form action="{{url('add_cart_newp',$product1->id)}}" method="Post">
->>>>>>> 1a75d973c69667094ebb95e3edd32e3d4324bd4a
                   @csrf
                   <div class = "row">
                      <div class = "col-md-4">

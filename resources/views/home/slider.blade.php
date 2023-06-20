@@ -62,7 +62,7 @@
                             On Everything
                          </h1>
                          <div class="btn-box">
-                            <a href="" class="btn1">
+                            <a href="{{url('show_product_nav')}}" class="btn1">
                             Shop Now
                             </a>
                          </div>

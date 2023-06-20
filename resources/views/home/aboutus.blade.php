@@ -206,7 +206,7 @@
                   <p> Be our partner for promote your products from your factory or anything by sponsor and collaborate with us. Please Contact us for information!</p>
                </div>
                <div class="title_buttom">
-                  <a href="#">Shop now </a>
+                  <a href="{{url('show_product_nav')}}">Shop now </a>
                </div>
             </div>
          </div>

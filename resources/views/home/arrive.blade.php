@@ -12,7 +12,7 @@
                   <p> Host: "Ladies and gentlemen, welcome to our highly anticipated shoe arrival event! We're thrilled to showcase the latest collection of stylish and trendy footwear. Get ready to witness an array of stunning designs and impeccable craftsmanship. Without further ado, let's kick off this exciting show!</p>
                </div>
                <div class="title_buttom">
-                  <a href="#">Shop now </a>
+                  <a href="{{url('show_product_nav')}}">Shop now </a>
                </div>
             </div>
          </div>
