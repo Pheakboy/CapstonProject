@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
@@ -24,6 +25,7 @@ class FooterController extends Controller
     }
     public function aboutus()
     {
-        return view('home.aboutus');
+        $categories = Category :: all();
+        return view('home.aboutus',compact('categories'));
     }
 }

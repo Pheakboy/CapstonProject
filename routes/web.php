@@ -105,6 +105,8 @@ route::get('/order',[AdminController::class,'order']);
 
 route::get('/delivered/{id}',[AdminController::class,'delivered']);
 
+route::get('/search',[AdminController::class,'searchdata']);
+
 
 
 

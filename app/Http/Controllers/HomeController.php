@@ -33,23 +33,37 @@ class HomeController extends Controller
     $categories = Category::all();
     $comments  = Comment::all();
     $reply = Reply::all();
-    $user = auth()->user(); // Use the auth() helper function instead of auth::user()
-    $count = 0; // Initialize $count to 0
-
-    if ($user) {
-        $count = cart::where('name', $user->name)->count();
-    }
 
     // dd($categories);
     
-    return view('home.userpage', compact('product', 'product1','product2', 'categories','comments','reply','count'));
+    return view('home.userpage', compact('product', 'product1','product2', 'categories','comments','reply'));
 }
 
     public function redirect()
     {
         if(!empty(Auth::user()) && Auth::user()->usertype == 1 )
         {
-            return view('admin.home');
+            $total_product=product::all()->count();
+
+            $total_order=order::all()->count();
+
+            $total_user=user::all()->count();
+
+            $order=Order::all();
+
+            $total_revenue=0;
+
+              foreach($order as $order)
+            {
+                $total_revenue=$total_revenue+$order->price;
+            }
+
+            
+            $total_delivered=order::where('delivery_status','=','delivered')->get()->count();
+
+            $total_processing=order::where('delivery_status','=','processing')->get()->count();
+
+            return view('admin.home',compact('total_product','total_order','total_user','total_revenue','total_delivered','total_processing'));
         }
         else 
         {
@@ -59,9 +73,7 @@ class HomeController extends Controller
             $categories = Category::all(); 
             $comments  = Comment::all();
             $reply = Reply::all();
-            $user = auth()->user();
-            $count = cart::where('name',$user->name)->count();
-            return view('home.userpage',compact('product','product1','product2','categories','comments','reply','count'));
+            return view('home.userpage',compact('product','product1','product2','categories','comments','reply'));
             
         }
     }
@@ -132,8 +144,7 @@ class HomeController extends Controller
                 }
 
                 $cart ->save();
-                $count = cart::where('name',$user->name)->count();
-                return redirect()->back()->with('message','Product Added Successfully')->with('count', $count);
+                return redirect()->back()->with('message','Product Added Successfully');
             }
             else
             {
@@ -312,10 +323,8 @@ class HomeController extends Controller
                 $id=Auth::user()->id;
                 $cart = cart::where('user_id','=',$id)->get();
                 $categories = Category :: all();
-                $user = auth()->user();
-                   $count = cart::where('name',$user->name)->count();
     
-                return view('home.showcart',compact('cart','categories','count'));
+                return view('home.showcart',compact('cart','categories'));
             }
             else
             {

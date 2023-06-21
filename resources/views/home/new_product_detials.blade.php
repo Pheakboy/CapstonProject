@@ -65,6 +65,15 @@
 
                  <h6>Product detiial:{{$product1->description}}</h6>
 
+
+                 <h6>Product quantity:{{$product1->quantity }}</h6>
+
+                 <form action="{{url('add_cart',$product1->id)}}" method="Post">
+
+                 <h6>Product quantity:{{$product1->quantity }}</h6>
+                  
+                 <form action="{{url('add_cart_newp',$product1->id)}}" method="Post">
+
                  <h6>Product quantity:{{$product1->quantity }}</h6>
                   
                  <form action="{{url('add_cart_newp',$product1->id)}}" method="Post">

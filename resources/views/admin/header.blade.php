@@ -10,8 +10,9 @@
         </button>
         <ul class="navbar-nav w-100">
           <li class="nav-item w-100">
-            <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-              <input type="text" class="form-control" placeholder="Search products">
+            <form action="{{url('search')}}" method="get" class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+              @csrf
+              <input type="text" class="form-control" placeholder="Search products" >
             </form>
           </li>
         </ul>

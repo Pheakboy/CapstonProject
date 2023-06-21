@@ -9,7 +9,7 @@
                       <div class="information_f">
                         <p><strong>ADDRESS:</strong>CADT , Cambodia Academy Degital of Technology</p>
                         <p><strong>TELEPHONE:</strong> +885 969629934</p>
-                        <p><strong>EMAIL:</strong> pheakboy@gmail.com</p>
+                        <p><strong>EMAIL:</strong> CSPTeam@gmail.com</p>
                       </div>
                    </div>
                </div>
@@ -23,7 +23,7 @@
                         <ul>
                            <li><a href="{{url('/')}}">Home</a></li>
                            <li><a href="{{url('show_product_nav')}}">Product</a></li>
-                           <li><a href="contact">Contact</a></li>
+                           <li><a href="{{url('show_contactForm')}}">Contact</a></li>
                            <li><a href="aboutus">About</a></li>
                         </ul>
                      </div>
