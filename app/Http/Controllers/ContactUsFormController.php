@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Contact;
 use Mail;
 use App\Models\Category;
+use App\Models\Cart;
 
 class ContactUsFormController extends Controller
 {
