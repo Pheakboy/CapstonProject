@@ -172,7 +172,7 @@ class HomeController extends Controller
             return redirect('login');
         }
     }
-
+    
     public function add_cart_newp(Request $request,$id)
     {
         if(Auth::id())
