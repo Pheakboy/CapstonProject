@@ -320,6 +320,7 @@ class HomeController extends Controller
             $categories = Category:: all();
 
             $product = Product::paginate(3);
+            
             $count = cart::where('name',$user->name)->count();
 
             return view('home.product_nav',compact('categories','product','count'));

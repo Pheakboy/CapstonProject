@@ -49,14 +49,14 @@
                    </h5>
 
                    @if($products->discount_price!=null)
-                   <h6 style="color:red;">
+                   <h6 style="color:blue;">
                      Discount price
                      <br>
                      $ {{$products->discount_price}}
                   </h6>
 
                   
-                  <h6 style="text-decoration: line-through; color:blue;">
+                  <h6 style="text-decoration: line-through; color:red;">
                      price
                      <br>
                      $ {{$products->price}}
