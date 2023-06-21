@@ -320,8 +320,9 @@ class HomeController extends Controller
             $categories = Category:: all();
 
             $product = Product::paginate(3);
+            $count = cart::where('name',$user->name)->count();
 
-            return view('home.product_nav',compact('categories','product'));
+            return view('home.product_nav',compact('categories','product','count'));
         }
 
         public function show_cart()
@@ -471,8 +472,9 @@ class HomeController extends Controller
                 $order = Order::where('user_id','=',$userid)->get();
 
                 $categories = Category :: all();
-    
-                return view('home.order',compact('order','categories'));
+                $count = cart::where('name',$user->name)->count();
+
+                return view('home.order',compact('order','categories','count'));
             }
             else
             {

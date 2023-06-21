@@ -12,7 +12,9 @@ class ContactUsFormController extends Controller
     public function show_contactForm()
     {
         $categories=Category::all();
-        return view('/home.contact',compact('categories'));
+        $count = cart::where('name',$user->name)->count();
+
+        return view('/home.contact',compact('categories','count'));
     }
 
     // Store Contact Form data
@@ -33,7 +35,6 @@ class ContactUsFormController extends Controller
         $message->subject = $request->input('subject');
         $message->message = $request->input('message');
         $message->save();
-
 
 
         return redirect()->back()->with('message', 'We have received your message and would like to thank you for writing to us.');
