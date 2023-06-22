@@ -319,8 +319,8 @@ class HomeController extends Controller
         {
             $categories = Category:: all();
 
-            $product = Product::paginate(3);
-            
+            $product = Product::paginate(9);
+            $user=auth()->user();
             $count = cart::where('name',$user->name)->count();
 
             return view('home.product_nav',compact('categories','product','count'));

@@ -19,11 +19,11 @@
                    </ul>
                 </li>
                 <li class="nav-item">
-                   <a class="nav-link" href="{{url('show_product_nav')}}">Products</a>
+                   <a class="nav-link" id="product" href="{{url('show_product_nav')}}">Products</a>
                 </li>
                 
                 <li class="nav-item">
-                   <a class="nav-link" href="{{url('show_contactForm')}}">Contact</a>
+                   <a class="nav-link" id="contact" href="{{url('show_contactForm')}}">Contact</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{{url('show_cart')}}">Cart[{{$count}}]</a>
@@ -40,35 +40,36 @@
                
                @if (Route::has('login'))
 
-               @auth
-
-               <li class="nav-item">
-                  <x-app-layout>
-   
-                  </x-app-layout>
-               </li>
-
-               @else
-
-                <li class="nav-item" >
-                  <a class="btn btn-primary" id="logincss" href="{{ route('login') }}">Login</a>
-               </li>
-
-               <li class="nav-item" >
-                  <a class="btn btn-success" href="{{ route('register') }}">Register</a>
-               </li>
-
-               @endauth
-                @endif
-                  <form class="form-inline" action="{{url('product_search')}}" method="GET">
+                <form class="form-inline" action="{{url('product_search')}}" method="GET">
                   <div class="input-group">
                      <input class="form-control" type="text" name="search"  placeholder="Search">
                      <div class="input-group-append">
                         <button  class="btn" type="submit" >Search</button>
                      </div>
                   </div>
-      
                   </form>
+                @endif
+
+                @auth
+
+                <li class="nav-item" id="user">
+                   <x-app-layout>
+    
+                   </x-app-layout>
+                </li>
+ 
+                @else
+ 
+                 <li class="nav-item" >
+                   <a class="btn btn-primary" id="logincss" href="{{ route('login') }}">Login</a>
+                </li>
+ 
+                <li class="nav-item" >
+                   <a class="btn btn-success"id="registercss" href="{{ route('register') }}">Register</a>
+                </li>
+ 
+                @endauth
+                
              </ul>
           </div>
        </nav>
