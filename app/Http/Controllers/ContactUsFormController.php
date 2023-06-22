@@ -13,8 +13,17 @@ class ContactUsFormController extends Controller
     public function show_contactForm()
     {
         $categories=Category::all();
+<<<<<<< HEAD
         $user=auth()->user();
         $count = cart::where('name',$user->name)->count();
+=======
+        $user = auth()->user(); // Use the auth() helper function instead of auth::user()
+        $count = 0; // Initialize $count to 0
+
+    if ($user) {
+        $count = cart::where('name', $user->name)->count();
+    }
+>>>>>>> 186cd94d1f43303087d58b3eec04367249a645dd
 
         return view('/home.contact',compact('categories','count'));
     }
