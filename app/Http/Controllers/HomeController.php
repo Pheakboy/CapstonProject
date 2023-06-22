@@ -320,9 +320,13 @@ class HomeController extends Controller
             $categories = Category:: all();
 
             $product = Product::paginate(3);
-            
-            $count = cart::where('name',$user->name)->count();
-
+ 
+            $user = auth()->user(); // Use the auth() helper function instead of auth::user()
+            $count = 0; // Initialize $count to 0
+    
+        if ($user) {
+            $count = cart::where('name', $user->name)->count();
+        }
             return view('home.product_nav',compact('categories','product','count'));
         }
 
