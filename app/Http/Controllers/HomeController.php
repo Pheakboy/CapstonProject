@@ -318,15 +318,7 @@ class HomeController extends Controller
         public function show_product_nav()
         {
             $categories = Category:: all();
-
-
             $product = Product::paginate(9);
-            $user=auth()->user();
-            $count = cart::where('name',$user->name)->count();
-
-
-            $product = Product::paginate(3);
- 
             $user = auth()->user(); // Use the auth() helper function instead of auth::user()
             $count = 0; // Initialize $count to 0
     
@@ -547,8 +539,15 @@ class HomeController extends Controller
             $product1=new_product::where('title','LIKE',"%$search_text%")->paginate(6);
             $product2 = top_product::where('title','LIKE',"%$search_text%")->paginate(6);
             $categories=Category::all();
+            $user = auth()->user(); // Use the auth() helper function instead of auth::user()
+            $count = 0; // Initialize $count to 0
+    
+             if ($user) {
+            $count = cart::where('name', $user->name)->count();
+        }
 
-            return view('home.afterSearch', compact('product','product1','product2','categories'));
+
+            return view('home.afterSearch', compact('product','product1','product2','categories','count'));
 
         }
 }
