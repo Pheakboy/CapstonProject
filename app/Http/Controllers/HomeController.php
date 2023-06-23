@@ -319,12 +319,12 @@ class HomeController extends Controller
         {
             $categories = Category:: all();
 
-<<<<<<< HEAD
+
             $product = Product::paginate(9);
             $user=auth()->user();
             $count = cart::where('name',$user->name)->count();
 
-=======
+
             $product = Product::paginate(3);
  
             $user = auth()->user(); // Use the auth() helper function instead of auth::user()
@@ -333,7 +333,7 @@ class HomeController extends Controller
         if ($user) {
             $count = cart::where('name', $user->name)->count();
         }
->>>>>>> 186cd94d1f43303087d58b3eec04367249a645dd
+
             return view('home.product_nav',compact('categories','product','count'));
         }
 
