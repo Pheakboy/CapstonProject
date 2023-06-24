@@ -22,7 +22,7 @@
                                 @endforeach
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        <li  class="nav-item">
                             <a class="nav-link" href="{{url('show_product_nav')}}">Products</a>
                         </li>
 
@@ -32,7 +32,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('show_cart')}}">Cart</a>
                         </li>
-                        <li class="nav-item">
+                        <li  class="nav-item">
                             <a class="nav-link" href="{{url('show_order')}}">Order</a>
                         </li>
 
@@ -54,11 +54,11 @@
 
                             @else
 
-                                <li class="nav-item" >
+                                <li  class="nav-item" >
                                     <a class="btn btn-primary" id="logincss" href="{{ route('login') }}">Login</a>
                                 </li>
 
-                                <li class="nav-item" >
+                                <li  class="nav-item" >
                                     <a class="btn btn-success" href="{{ route('register') }}">Register</a>
                                 </li>
 
@@ -67,7 +67,7 @@
                         <form class="form-inline" action="{{url('product_search')}}" method="GET">
                             <div class="input-group">
                                 <input class="form-control" type="text" name="search"  placeholder="Search">
-                                <div class="input-group-append">
+                                <div  class="input-group-append">
                                     <button  class="btn" type="submit" >Search</button>
                                 </div>
                             </div>
@@ -112,9 +112,10 @@
                 <h5 class="mt-3 name">Rim<br>Kunvath</h5><span class="work d-block"><br>G-Sports Owner</span>{{--<span class="work d-block">real estate</span>--}}
                 {{--<div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>--}}
                 <div class="social">
-                    <a href="https://www.facebook.com/CADT.Academy?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
-                    <a href="https://t.me/cadt_official"><i class="fa fa-telegram"></i></a>
-                    <a href="mailto: kunvath.rim@student.cadt.edu.kh"><i class="fa fa-google"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100049760348529&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                    <i class="fa fa-telegram" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'" onclick="showAlert1()"></i>
+                    {{--<a href="mailto: https://www.cadt.edu.kh"><i class="fa fa-google"></i></a>--}}
+
                 </div>
             </div>
         </div>
@@ -123,9 +124,9 @@
                 <h5 class="mt-3 name">Sot<br>Sopheaktra</h5><span class="work d-block"><br>G-Sports Owner</span>{{--<span class="work d-block">real estate</span>--}}
                 {{--<div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>--}}
                 <div class="social">
-                    <a href="https://www.facebook.com/CADT.Academy?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
-                    <a href="https://t.me/cadt_official"><i class="fa fa-telegram"></i></a>
-                    <a href="https://www.cadt.edu.kh/"><i class="fa fa-google"></i></a>
+                    <a href="https://www.facebook.com/sipheaktra.sot?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                    <i class="fa fa-telegram" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'" onclick="showAlert2()"></i>
+                    {{--<a href="https://www.cadt.edu.kh/"><i class="fa fa-google"></i></a>--}}
                 </div>
             </div>
         </div>
@@ -134,9 +135,9 @@
                 <h5 class="mt-3 name">Leang<br>Menghang</h5><span class="work d-block"><br>G-Sports Owner</span>{{--<span class="work d-block">real estate</span>--}}
                 {{--<div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>--}}
                 <div class="social">
-                    <a href="https://www.facebook.com/CADT.Academy?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
-                    <a href="https://t.me/cadt_official"><i class="fa fa-telegram"></i></a>
-                    <a href="https://www.cadt.edu.kh/"><i class="fa fa-google"></i></a>
+                    <a href="https://www.facebook.com/groupmeng.pozzlozz?mibextid=LQQJ4d"><i class="fa fa-facebook"></i></a>
+                    <i class="fa fa-telegram" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'" onclick="showAlert3()"></i>
+                    {{--<a href="https://www.cadt.edu.kh/"><i class="fa fa-google"></i></a>--}}
                 </div>
             </div>
         </div>
@@ -145,9 +146,9 @@
                 <h5 class="mt-3 name">Choub<br>Chhenglun</h5><span class="work d-block"><br>G-Sports Owner</span>{{--<span class="work d-block">real estate</span>--}}
                 {{--<div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>--}}
                 <div class="social">
-                    <a href="https://www.facebook.com/CADT.Academy?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
-                    <a href="https://t.me/cadt_official"><i class="fa fa-telegram"></i></a>
-                    <a href="https://www.cadt.edu.kh/"><i class="fa fa-google"></i></a>
+                    <a href="https://www.facebook.com/Chhenglunck?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                    <i class="fa fa-telegram" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'" onclick="showAlert4()"></i>
+                    {{--<a href="https://www.cadt.edu.kh/"><i class="fa fa-google"></i></a>--}}
                 </div>
             </div>
         </div>
@@ -156,9 +157,9 @@
                 <h5 class="mt-3 name">Bou<br>Taihor</h5><span class="work d-block"><br>G-Sports Owner</span>{{--<span class="work d-block">real estate</span>--}}
                 {{--<div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>--}}
                 <div class="social">
-                    <a href="https://www.facebook.com/CADT.Academy?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
-                    <a href="https://t.me/cadt_official"><i class="fa fa-telegram"></i></a>
-                    <a href="https://www.cadt.edu.kh/"><i class="fa fa-google"></i></a>
+                    <a href="https://www.facebook.com/taihor.bou.9?mibextid=LQQJ4d"><i class="fa fa-facebook"></i></a>
+                    <i class="fa fa-telegram" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'" onclick="showAlert5()"></i>
+                    {{--<a href="https://www.cadt.edu.kh/"><i class="fa fa-google"></i></a>--}}
                 </div>
             </div>
         </div>
@@ -196,28 +197,86 @@
       <div class="container">
          <div class="box">
             <div class="arrival_bg_box">
-               <img src="images/partner.png" alt="">
+               <img src="images/sponsor.png" alt="">
             </div>
             <div class="arrival_bg_title">
                <div class="titile_top">
-                  <h2> #Partner</h2>
+                  <h2>#Partner</h2>
                </div>
                <div class="title_center">
-                  <p> Be our partner for promote your products from your factory or anything by sponsor and collaborate with us. Please Contact us for information!</p>
+                  <p>Be our partner to promote your products from your factory or anything by sponsor and collaborate with us. Please Contact us for information!</p>
                </div>
                <div class="title_buttom">
-                  <a href="{{url('show_product_nav')}}">Shop now </a>
+                  <a href="{{url('show_contactForm')}}">Contact US</a>
                </div>
             </div>
          </div>
       </div>
    </section>
-
-
 <!-- end arrival section -->
 <!-- footer section -->
 @include('home.footer')
-<!-- footer section -->
+<!-- telegram section -->
+<script>
+    function showAlert1() {
+        Swal.fire({
+            /*title: 'Sweet!',
+            text: 'Modal with a custom image.',*/
+            imageUrl: 'images/Kunvath_telegram.png',
+            imageWidth: 300,
+            imageHeight: 400,
+            imageAlt: 'Custom image',
+            showConfirmButton: true,
+            confirmButtonText: 'DONE!',
+            /*backdrop: 'static',
+            timer: 500000*/
+        })
+    }
+    function showAlert2() {
+        Swal.fire({
+            /*title: 'Sweet!',
+            text: 'Modal with a custom image.',*/
+            imageUrl: 'images/Sopheaktra_telegram.png',
+            imageWidth: 300,
+            imageHeight: 400,
+            imageAlt: 'Custom image',
+            showConfirmButton: true,
+            confirmButtonText: 'DONE!',
+            /*backdrop: 'static',
+            timer: 500000*/
+        })
+    }
+    function showAlert3() {
+        Swal.fire({
+            imageUrl: 'images/Menghang_telegram.png',
+            imageWidth: 300,
+            imageHeight: 400,
+            imageAlt: 'Custom image',
+            showConfirmButton: true,
+            confirmButtonText: 'DONE!'
+        })
+    }
+    function showAlert4() {
+        Swal.fire({
+            imageUrl: 'images/Chhenglun_telegram.png',
+            imageWidth: 300,
+            imageHeight: 400,
+            imageAlt: 'Custom image',
+            showConfirmButton: true,
+            confirmButtonText: 'DONE!'
+        })
+    }
+    function showAlert5() {
+        Swal.fire({
+            imageUrl: 'images/Taihor_telegram.png',
+            imageWidth: 300,
+            imageHeight: 400,
+            imageAlt: 'Custom image',
+            showConfirmButton: true,
+            confirmButtonText: 'DONE!'
+        })
+    }
+</script>
 <!-- jQery -->
 <script src="js/jquery-3.4.1.min.js"></script>
 <!-- popper js -->
