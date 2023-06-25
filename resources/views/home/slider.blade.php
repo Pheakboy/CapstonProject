@@ -11,7 +11,7 @@
                       <div class="detail-box">
                          <h1 class="text-danger">
                             <span>
-                            Sale 20% Off
+                            Sale 10% Off
                             </span>
                             <br>
                             On Everything
@@ -34,7 +34,7 @@
                       <div class="detail-box">
                          <h1 class="text-danger">
                             <span>
-                            Sale 20% Off
+                            Sale 10% Off
                             </span>
                             <br>
                             On Everything
@@ -56,7 +56,7 @@
                       <div class="detail-box">
                          <h1 class="text-danger">
                             <span>
-                            Sale 20% Off
+                            Sale 10% Off
                             </span>
                             <br>
                             On Everything

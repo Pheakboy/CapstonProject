@@ -77,7 +77,7 @@
 .dropdown  .dropdown-content .box{
   width: 100%;
   height: 70%;
-  background-color: #4CAF50;
+  /* background-color: #4CAF50; */
   text-align: center;
   border-radius: 10px;
   margin-top: 10px
@@ -88,10 +88,11 @@
 .dropdown  .dropdown-content .box1{
   width: 100%;
   height: 70%;
-  background-color: red;
+  /* background-color:black; */
   text-align: center;
   border-radius: 10px;
   margin-top: 10px
+  
   
 
 }
@@ -100,7 +101,7 @@
   display: none;
   margin-bottom: 10px;    
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: black;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;

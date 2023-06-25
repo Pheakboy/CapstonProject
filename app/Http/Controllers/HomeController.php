@@ -416,7 +416,9 @@ class HomeController extends Controller
         public function stripe(Request $request,$totalprice)
         {
             $categories = Category::all();
-            return view('home.stripe',compact('totalprice','categories'));
+            $user = auth()->user();
+            $count = cart::where('name',$user->name)->count();
+            return view('home.stripe',compact('totalprice','categories','count'));
         }
 
         public function stripePost(Request $request,$totalprice)
