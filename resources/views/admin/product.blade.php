@@ -12,6 +12,12 @@
         .font_size{
             font-size: 40px;
             padding-bottom: 40px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            padding-top: 20px;
+            margin-bottom: 20px;
+            color: rgb(177,128,19);
         }
         .text_color{
             color: black;
@@ -52,7 +58,7 @@
                     @csrf
 
                 <div class="div_center">
-                    <h1 class="font_size">Add Product</h1>
+                    <h1 class="font_size">ADD PRODUCTS</h1>
 
                     <div class="div_design">
                         <label>Product Title:</label>

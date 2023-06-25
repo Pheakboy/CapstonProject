@@ -19,26 +19,26 @@
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown border-left">
             <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <i class="mdi mdi-email"></i>
+              {{-- <i class="mdi mdi-email"></i> --}}
               <span class="count bg-success"></span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
-              <h6 class="p-3 mb-0">Messages</h6>
+              {{-- <h6 class="p-3 mb-0">Messages</h6> --}}
               <div class="dropdown-divider"></div>
                 
           </li>
           <li class="nav-item dropdown border-left">
             <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-              <i class="mdi mdi-bell"></i>
+              {{-- <i class="mdi mdi-bell"></i> --}}
               <span class="count bg-danger"></span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-              <h6 class="p-3 mb-0">Notifications</h6>
+              {{-- <h6 class="p-3 mb-0">Notifications</h6> --}}
               <div class="dropdown-divider"></div>
              
               </a>
               <div class="dropdown-divider"></div>
-              <p class="p-3 mb-0 text-center">See all notifications</p>
+              {{-- <p class="p-3 mb-0 text-center">See all notifications</p> --}}
             </div>
           </li>
           <li>

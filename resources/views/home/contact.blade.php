@@ -47,7 +47,7 @@
                                   <a class="nav-link" href="{{url('show_product_nav')}}">Products</a>
                               </li>
 
-                              <li class="nav-item active">
+                              <li class="nav-item active" style="margin-left: 15px;">
                                   <a class="nav-link" href="{{url('show_contactForm')}}">Contact</a>
                               </li>
                               <li class="nav-item">
@@ -67,11 +67,7 @@
 
                                   @auth
 
-                                      <li class="nav-item">
-                                          <x-app-layout>
-
-                                          </x-app-layout>
-                                      </li>
+                                     
 
                                   @else
 
@@ -82,18 +78,25 @@
                                       <li class="nav-item" >
                                           <a class="btn btn-success" href="{{ route('register') }}">Register</a>
                                       </li>
+                                      <li class="nav-item">
+                                      
+                                   </li>
 
                                   @endauth
                               @endif
                               <form class="form-inline" action="{{url('product_search')}}" method="GET">
-                                  <div class="input-group">
-                                      <input class="form-control" type="text" name="search"  placeholder="Search">
-                                      <div class="input-group-append">
+                                  <div class="input-group" style="margin-left: 15px; height:90%;">
+                                      <input class="form-control" type="text" name="search"  placeholder="Search" style="height:100%; ">
+                                      <div class="input-group-append" style="height: 100%;">
                                           <button  class="btn" type="submit" >Search</button>
                                       </div>
                                   </div>
 
                               </form>
+
+                              <x-app-layout>
+
+                              </x-app-layout>
                           </ul>
                       </div>
                   </nav>

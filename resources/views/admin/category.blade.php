@@ -12,6 +12,7 @@
     .h2_font{
         font-size: 40px;
         padding-bottom: 40px;
+        color: rgb(177,128,19);
     }
     .input_color{
       color: black;
@@ -23,6 +24,7 @@
       margin-top: 30px;
       border: 3px solid white;
     }
+ 
     </style>
 
   </head>
@@ -47,7 +49,7 @@
 
                 <div class="div_center">
                     <h2 class="h2_font">
-                        Add Category
+                        ADD CATEGORY
                     </h2>
                     <form action="{{url('/add_category')}}" method="POST">
                       @csrf
@@ -58,7 +60,7 @@
                 </div>
 
                 <table class="center">
-                  <tr>
+                  <tr class="td_add">
                     <td>Category Name</td>
                     <td>Action</td>
                   </tr>

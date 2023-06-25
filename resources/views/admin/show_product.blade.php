@@ -17,18 +17,137 @@
             font-size: 40px;
             font-weight: bold;
             padding-top: 20px;
-            text-decoration: underline;
+            margin-bottom: 20px;
+            color: rgb(177,128,19);
         }
         .image_size{
             width: 100px;
             height: 100px;
         }
         .th_color{
-            background-color: skyblue;
+            background-color: red;
         }
         .th_space{
             padding: 20px;
         }
+
+        /* .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      background-color: red;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: red;
+    }
+
+    .button-secondary {
+      background-color: #4CAF50;
+
+    }
+
+    .button-secondary:hover {
+      background-color: #4CAF50;
+    }
+    .button_view{
+      float: right;
+      margin-right: 98px;
+      margin-bottom: 10px;
+      margin-top: 
+    } */
+    .div_btn{
+      float: right;
+      margin-right: 98px;
+      margin-bottom: 20px;
+
+    }
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown  .dropdown-content .box{
+  width: 100%;
+  height: 70%;
+  background-color: #4CAF50;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px
+  
+
+}
+
+.dropdown  .dropdown-content .box1{
+  width: 100%;
+  height: 70%;
+  background-color: red;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px
+  
+
+}
+
+    .dropdown-content {
+  display: none;
+  margin-bottom: 10px;    
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+
+    .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  /* background-color: #4CAF50; */
+  }
+    .dropdown:hover .dropdown-content {
+  display: block;
+  }
+  
+
+  .button{
+    display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      background-color: red;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  .button-secondary{
+    display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      background-color:#4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+    
     </style>
   </head>
   <body>
@@ -51,7 +170,34 @@
 
                 @endif
 
-                <h1 class="font_size">All Product</h1>
+                <h1 class="font_size">ALL PRODUCTS</h1>
+
+                {{-- <div class="button_view">
+                    <button class="button">View Products
+                    </button>
+                    <button class="button button-secondary">Add Products</button>
+                </div> --}}
+
+              <div class="div_btn">
+                <div class="dropdown">
+                  <button class="button">View Products </button>
+                  <div class="dropdown-content">
+                   <div class="box1"><a href="{{url('/show_new_product')}}">New Products</a></div>
+                   <div class="box1"> <a href="{{url('/show_top_product')}}">Top Products</a></div>
+                   <div class="box1"> <a href="{{url('/show_product')}}">Our Products</a></div>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class=" button-secondary">Add Products</button>
+                  <div class="dropdown-content">
+                    <div class="box"><a href="{{url('/view_new_product')}}">New Products</a></div>
+                    <div class="box"><a href="{{url('/view_top_product')}}">Top Products</a></div>
+                    <div class="box"><a href="{{url('/view_product')}}">Our Porducts</a></div>
+                  </div>
+                </div>
+                
+              </div>
+            
 
                 <table class="center">
                     <tr class="th_color">

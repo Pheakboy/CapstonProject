@@ -26,7 +26,7 @@
                             <a class="nav-link" href="{{url('show_product_nav')}}">Products</a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item" style="margin-left: 20px;">
                             <a class="nav-link" href="{{url('show_contactForm')}}">Contact</a>
                         </li>
                         <li class="nav-item">
@@ -46,11 +46,7 @@
 
                             @auth
 
-                                <li class="nav-item">
-                                    <x-app-layout>
-
-                                    </x-app-layout>
-                                </li>
+                           
 
                             @else
 
@@ -65,14 +61,20 @@
                             @endauth
                         @endif
                         <form class="form-inline" action="{{url('product_search')}}" method="GET">
-                            <div class="input-group">
-                                <input class="form-control" type="text" name="search"  placeholder="Search">
-                                <div  class="input-group-append">
-                                    <button  class="btn" type="submit" >Search</button>
+                            <div class="input-group" style="margin-left: 15px; height:90%;">
+                                <input class="form-control" type="text" name="search"  placeholder="Search" style="height:100%; ">
+                                <div  class="input-group-append" style="height: 100%;">
+                                    <button  class="btn" type="submit">Search</button>
                                 </div>
                             </div>
 
                         </form>
+
+                        <li class="nav-item">
+                            <x-app-layout>
+
+                            </x-app-layout>
+                        </li>
 
                     </ul>
                 </div>

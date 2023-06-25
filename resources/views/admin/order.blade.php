@@ -6,10 +6,14 @@
     @include('admin.css')
     <style>
         .title_order{
-            text-align: center;
-            font-size: 30px;
             font-weight: bold; 
             padding-bottom: 40px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            padding-top: 20px;
+            margin-bottom: 20px;
+            color: rgb(177,128,19);
         }
         .table_order{
             border: 2px solid white;
@@ -18,7 +22,8 @@
             text-align: center;
         }
         .th_deg{
-            background-color: skyblue;
+           
+            background-color: red;
         }
         .img_size{
             size: 200px;
@@ -37,7 +42,7 @@
         <div class="main-panel">
             <div class="content-wrapper">
 
-                <h1 class="title_order">All Orders</h1>
+                <h1 class="title_order">ALL ORDERS</h1>
 
 
                 <div style="padding-left: 400px; padding-bottom: 30px;">

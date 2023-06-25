@@ -17,14 +17,15 @@
             font-size: 40px;
             font-weight: bold;
             padding-top: 20px;
-            text-decoration: underline;
+            margin-bottom: 20px;
+            color: rgb(177,128,19);
         }
         .image_size{
             width: 100px;
             height: 100px;
         }
         .th_color{
-            background-color: skyblue;
+            background-color:red;
         }
         .th_space{
             padding: 20px;
@@ -51,7 +52,7 @@
 
                 @endif
 
-                <h1 class="font_size">New All Product</h1>
+                <h1 class="font_size">NEW PRODUCTS</h1>
 
                 <table class="center">
                     <tr class="th_color">
