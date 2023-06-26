@@ -110,11 +110,11 @@
 <div class="container mt-3">
     <div class="row">
         <div class="col-md-2">
-            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="images/Kunvath.jpg" width="90">
+            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle mx-auto d-block" src="images/Kunvath.jpg" width="90">
                 <h5 class="mt-3 name">Rim<br>Kunvath</h5><span class="work d-block"><br>G-Sports Owner</span>{{--<span class="work d-block">real estate</span>--}}
                 {{--<div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>--}}
                 <div class="social">
-                    <a href="https://www.facebook.com/profile.php?id=100049760348529&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100049760348529&mibextid=ZbWKwL"><i class="fa fa-facebook" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'"></i></a>
                     <i class="fa fa-telegram" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'" onclick="showAlert1()"></i>
                     {{--<a href="mailto: https://www.cadt.edu.kh"><i class="fa fa-google"></i></a>--}}
 
@@ -122,44 +122,44 @@
             </div>
         </div>
         <div class="col-md-2">
-            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="images/Sopheaktra.jpg" width="90">
+            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle mx-auto d-block" src="images/Sopheaktra.jpg" width="90">
                 <h5 class="mt-3 name">Sot<br>Sopheaktra</h5><span class="work d-block"><br>G-Sports Owner</span>{{--<span class="work d-block">real estate</span>--}}
                 {{--<div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>--}}
                 <div class="social">
-                    <a href="https://www.facebook.com/sipheaktra.sot?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/sipheaktra.sot?mibextid=ZbWKwL"><i class="fa fa-facebook" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'"></i></a>
                     <i class="fa fa-telegram" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'" onclick="showAlert2()"></i>
                     {{--<a href="https://www.cadt.edu.kh/"><i class="fa fa-google"></i></a>--}}
                 </div>
             </div>
         </div>
         <div class="col-md-2">
-            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="images/Menghang.png" width="90">
+            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle mx-auto d-block" src="images/Menghang.png" width="90">
                 <h5 class="mt-3 name">Leang<br>Menghang</h5><span class="work d-block"><br>G-Sports Owner</span>{{--<span class="work d-block">real estate</span>--}}
                 {{--<div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>--}}
                 <div class="social">
-                    <a href="https://www.facebook.com/groupmeng.pozzlozz?mibextid=LQQJ4d"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/groupmeng.pozzlozz?mibextid=LQQJ4d"><i class="fa fa-facebook" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'"></i></a>
                     <i class="fa fa-telegram" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'" onclick="showAlert3()"></i>
                     {{--<a href="https://www.cadt.edu.kh/"><i class="fa fa-google"></i></a>--}}
                 </div>
             </div>
         </div>
         <div class="col-md-2">
-            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="images/Chhenglun.png" width="90">
+            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle mx-auto d-block" src="images/Chhenglun.png" width="90">
                 <h5 class="mt-3 name">Choub<br>Chhenglun</h5><span class="work d-block"><br>G-Sports Owner</span>{{--<span class="work d-block">real estate</span>--}}
                 {{--<div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>--}}
                 <div class="social">
-                    <a href="https://www.facebook.com/Chhenglunck?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/Chhenglunck?mibextid=ZbWKwL"><i class="fa fa-facebook" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'"></i></a>
                     <i class="fa fa-telegram" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'" onclick="showAlert4()"></i>
                     {{--<a href="https://www.cadt.edu.kh/"><i class="fa fa-google"></i></a>--}}
                 </div>
             </div>
         </div>
         <div class="col-md-2">
-            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="images/Taihor.jpg" width="90">
+            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle mx-auto d-block" src="images/Taihor.jpg" width="90">
                 <h5 class="mt-3 name">Bou<br>Taihor</h5><span class="work d-block"><br>G-Sports Owner</span>{{--<span class="work d-block">real estate</span>--}}
                 {{--<div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>--}}
                 <div class="social">
-                    <a href="https://www.facebook.com/taihor.bou.9?mibextid=LQQJ4d"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/taihor.bou.9?mibextid=LQQJ4d"><i class="fa fa-facebook" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'"></i></a>
                     <i class="fa fa-telegram" style="color: blue;" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'" onclick="showAlert5()"></i>
                     {{--<a href="https://www.cadt.edu.kh/"><i class="fa fa-google"></i></a>--}}
                 </div>
